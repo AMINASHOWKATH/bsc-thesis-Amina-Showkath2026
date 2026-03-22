@@ -183,3 +183,90 @@ of PMO IS integration maturity in Latvian enterprises.
   \end{tabular}
   }
 \end{table}
+\section{Theoretical Framework}
+\label{sec:theory}
+
+This section presents the theoretical lens that grounds the empirical investigation. 
+Based on the review of existing maturity models and IS integration research in 
+Section~\ref{sec:related}, this thesis proposes a four-level Integration Maturity 
+Model (IMM) specifically adapted to PMO information system environments.
+
+\subsection{Foundations of the Integration Maturity Model}
+The proposed model draws on three theoretical foundations. First, the staged 
+progression concept from the Capability Maturity Model Integration (CMMI) 
+\cite{paulk1993}, which posits that organizations advance through discrete, 
+measurable levels of capability. Second, the enterprise integration patterns 
+framework \cite{hohpe2004}, which classifies integration mechanisms by their 
+degree of automation and architectural sophistication. Third, the data quality 
+dimensions framework \cite{dama2017}, which links integration architecture to 
+data accuracy, completeness, and timeliness outcomes.
+
+\subsection{The Four-Level Integration Maturity Model}
+The Integration Maturity Model proposed in this thesis defines four levels of 
+IS integration maturity in PMO environments, as presented in 
+Table~\ref{tab:imm-levels}.
+
+{\singlespacing
+\begin{table}[h]
+  \caption{Four-Level Integration Maturity Model for PMO Information Systems}
+  \label{tab:imm-levels}
+  \centering
+  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.25\linewidth}p{0.22\linewidth}p{0.20\linewidth}}
+    \toprule
+    \textbf{Level} & \textbf{Name} & \textbf{Integration Mechanism} & 
+    \textbf{Reporting} & \textbf{Governance}\\
+    \midrule
+    1 & Initial & No integration; fully manual data consolidation via spreadsheets & 
+    Fully manual; high error rate & Ad hoc; no standardization\\
+    2 & Developing & File-based integration (CSV/Excel exports); partial automation & 
+    Semi-manual; scheduled exports & Basic standards; inconsistent\\
+    3 & Defined & API-based point-to-point integration; automated data flows & 
+    Mostly automated; near real-time & Defined processes; mostly consistent\\
+    4 & Optimized & Platform-level integration; unified data ecosystem with BI & 
+    Fully automated; real-time dashboards & Fully standardized; continuous improvement\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+}
+
+\textbf{Level 1 --- Initial.} At this level, PMO environments rely entirely on 
+manual data consolidation. Project data is collected from multiple disconnected 
+tools and compiled into reports manually, typically using spreadsheets. There is 
+no systematic data flow between systems, resulting in high risk of errors, 
+inconsistencies, and reporting delays. Governance practices are ad hoc and 
+unstandardized.
+
+\textbf{Level 2 --- Developing.} At Level 2, some degree of semi-automated 
+integration exists through file-based data exchange, such as scheduled CSV or 
+Excel exports between systems. While this reduces some manual effort, significant 
+human intervention is still required to consolidate and validate data. Reporting 
+is semi-automated and governance standards are partially defined but inconsistently 
+applied.
+
+\textbf{Level 3 --- Defined.} Level 3 organizations have implemented API-based 
+point-to-point integrations between key PMO systems, enabling automated data 
+flows between project tracking, financial, and reporting tools. Reporting is 
+mostly automated and near real-time. Governance processes are clearly defined 
+and consistently followed across most PMO functions.
+
+\textbf{Level 4 --- Optimized.} At the highest level of maturity, PMO environments 
+operate within a unified platform ecosystem where all systems are fully integrated 
+and data flows in real time. Centralized BI dashboards provide complete portfolio 
+visibility, and governance processes are fully standardized with continuous 
+improvement mechanisms in place. This level represents the benchmark for 
+information system integration excellence in PMO environments.
+
+\subsection{Variables and Relationships}
+The model defines the following key variables and relationships that will be 
+tested empirically in Chapter~3:
+
+\begin{itemize}
+    \item \textbf{Independent variable:} Integration Maturity Level (1--4), 
+    operationalized through survey items measuring integration mechanisms, 
+    automation level, and BI centralization.
+    \item \textbf{Dependent variables:} Reporting automation degree, perceived 
+    data accuracy and timeliness, and governance standardization level.
+    \item \textbf{Expected relationships:} Higher integration maturity levels 
+    are expected to be positively associated with all three dependent variables, 
+    consistent with the hypotheses stated in the Introduction.
+\end{itemize}
