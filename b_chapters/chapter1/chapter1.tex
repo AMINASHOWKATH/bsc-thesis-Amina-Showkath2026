@@ -1,123 +1,89 @@
 \chapter{Literature Review and Theoretical Background}
 \label{chap:litreview}
 
-% --- Purpose (for students) ---
-% This chapter defines key concepts, surveys related work, and sets the theoretical lens.
-% It must end by motivating the research direction and articulating the concrete gap your thesis fills.
-
 \section{Core Concepts and Definitions}
 \label{sec:concepts}
-Introduce the foundational terms your thesis relies on using authoritative sources, e.g., \cite{porter2008,laudon2015}. Define each term exactly once and use it consistently throughout the thesis. Prefer primary definitions where possible; when multiple definitions exist, present the variants and justify your chosen convention.
 
-Inline emphasis: \emph{italics}, \textbf{bold}. Use \verb|\enquote{...}| (from \texttt{csquotes}) for quotations, e.g., \enquote{quoted text}. Use \verb|\url{...}| for clickable links such as \url{https://ctan.org}.
+This section defines the foundational terminology used throughout the thesis. 
+Each term is defined once and used consistently in subsequent chapters.
 
-\paragraph{Citation tip.}
-With \texttt{biblatex} (IEEE style in this project), numeric citations use \verb|\cite{...}|.\footnote{Place the citation after punctuation when it references a full sentence.} Group multiple sources as needed, e.g., \cite{friedman2006,schmidt2014}.
+\subsection{Project Management Office (PMO)}
+A Project Management Office (PMO) is a centralized organizational unit responsible 
+for defining and maintaining project management standards, governance frameworks, 
+and reporting structures across an enterprise \cite{pmi2021}. According to the 
+Project Management Institute, PMOs can be classified into three types based on 
+their degree of control and influence:
 
-\section{Related Work: Themes, Methods, and Evidence}
-\label{sec:related}
-Organize prior work by coherent themes (theory, methods, application domains) or chronology. For each theme, summarize the central idea, typical assumptions, evaluation protocols, and reported limitations. Contrast strands rather than listing them.
-
-\begin{itemize}[leftmargin=1.2cm]
-  \item \textbf{Approach A (theory-driven).} Outline core mechanisms, typical datasets, and where this approach excels; note constraints or external validity issues \cite{friedman2006}.
-  \item \textbf{Approach B (data-driven/practice-oriented).} Contrast assumptions and deployment costs with Approach A; highlight reproducibility and measurement issues \cite{laudon2015}.
-  \item \textbf{Approach C (hybrid/emerging).} Summarize integration points and remaining open problems \cite{schmidt2014}.
+\begin{itemize}
+    \item \textbf{Supportive PMO} --- provides templates, best practices, and 
+    guidance with minimal direct control over projects;
+    \item \textbf{Controlling PMO} --- enforces compliance with project management 
+    frameworks and requires the use of specific methodologies;
+    \item \textbf{Directive PMO} --- takes direct control of projects, with project 
+    managers reporting directly to the PMO.
 \end{itemize}
 
-When referring to figures, tables, algorithms, or listings, always use labels + \verb|\cref| (e.g., \cref{fig:example-figure,tab:example-table,alg:example,lst:snippet}).
+In the context of this thesis, the term PMO refers to any formal organizational 
+unit in medium or large Latvian enterprises that fulfills at least a controlling 
+or directive function in project governance and reporting.
 
-% ---- Figure example (caption under figure; centered by class) ----
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.7\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-  \figsource{Author-created illustration (replace with your own figure and source).}
-  \caption{Example figure: a conceptual taxonomy (replace with your content).}
-  \label{fig:example-figure}
-\end{figure}
+\subsection{Project Management Information System (PMIS)}
+A Project Management Information System (PMIS) is a software-based system or 
+combination of tools used to support the planning, execution, monitoring, and 
+reporting of projects within a PMO environment \cite{laudon2015}. Common PMIS 
+tools include Microsoft Project, Jira, SAP, and Power BI. A PMIS may consist 
+of a single integrated platform or multiple specialized tools operating in 
+parallel, which introduces the challenge of information system integration.
 
-% ---- Table example (caption above; ragged-right by class) ----
-{\singlespacing
-\begin{table}[h]
-  \caption{Comparison matrix (replace with your synthesis)}
-  \label{tab:example-table}
-  \centering
-  \begin{tabular}{lrrr}
-    \toprule
-    Criterion            & Method A & Method B & Method C\\
-    \midrule
-    Accuracy (avg)       & 0.82     & 0.79     & 0.84\\
-    Cost (relative)      & High     & Medium   & Low\\
-    Data requirement     & Large    & Medium   & Small\\
-    \bottomrule
-  \end{tabular}
+\subsection{Information System Integration}
+Information system integration refers to the process of linking two or more 
+software systems so that data flows automatically between them without manual 
+intervention \cite{hohpe2004}. In PMO environments, integration typically occurs 
+between project tracking tools, financial systems, and reporting platforms. The 
+degree of integration can range from fully manual data consolidation to fully 
+automated, real-time data synchronization via Application Programming Interfaces 
+(APIs) or unified platform ecosystems.
 
-  \vspace{2mm}
-  \emph{Note:} Replace placeholders with your evidence; include units and sources.
-\end{table}
-}
+\subsection{Integration Maturity Model}
+A maturity model is a structured framework that describes the progressive 
+development of a capability across a defined set of levels \cite{paulk1993}. 
+In the context of information system integration, a maturity model defines 
+the stages through which an organization advances from basic, manual integration 
+practices toward fully automated, platform-level integration. This thesis adapts 
+the concept of maturity modeling to the specific context of PMO information 
+systems, proposing a four-level Integration Maturity Model as the primary 
+theoretical framework.
 
-\section{Theoretical Framework}
-\label{sec:theory}
-State the theoretical lens or formal model that grounds your work. Define variables and relationships precisely, and connect assumptions to the context of your thesis. Keep derivations concise; move long proofs to an appendix.
+\subsection{Business Intelligence and Dashboard Systems}
+Business Intelligence (BI) refers to the technologies, processes, and practices 
+used to collect, integrate, analyze, and present business data to support 
+decision-making \cite{negash2004}. In PMO environments, BI systems typically 
+manifest as centralized dashboards that aggregate data from multiple project 
+and financial systems into a unified view. The presence or absence of centralized 
+BI systems is used in this thesis as an indicator of governance standardization 
+maturity.
 
-\begin{align}
-  \label{eq:objective}
-  J(\theta) &= \mathbb{E}_{(x,y)\sim \mathcal{D}} \bigl[\, \ell(f_\theta(x),\, y)\, \bigr] \, ,
-\end{align}
+\subsection{Data Quality}
+Data quality refers to the degree to which data is accurate, complete, consistent, 
+and timely for its intended purpose \cite{dama2017}. In the context of PMO 
+reporting, data quality is directly influenced by the level of system integration: 
+manually consolidated data is more prone to errors and delays, while automated 
+integration reduces the risk of inconsistencies. This thesis measures data quality 
+through perceived data accuracy and timeliness as reported by PMO representatives.
 
-where $\ell$ is the loss aligned to your evaluation criterion and $f_\theta$ the model or rule under study. Reference important equations with \verb|\cref|, e.g., \cref{eq:objective}.
+\subsection{Reporting Automation}
+Reporting automation refers to the use of software tools and system integrations 
+to generate project status reports, dashboards, and portfolio summaries without 
+manual data entry or manipulation \cite{pmi2021}. Automated reporting reduces 
+the administrative burden on PMO staff and improves the timeliness and consistency 
+of management information. In this thesis, reporting automation is operationalized 
+as the extent to which PMO reports are generated automatically from integrated 
+systems rather than compiled manually.
 
-% ---- Algorithm (float + pseudocode) example ----
-\begin{algorithm}[h]
-\caption{Generic greedy selection (template — adapt to your context)}
-\begin{algorithmic}[1]
-  \State Initialize solution $S \gets \emptyset$
-  \While{a feasible choice exists}
-    \State choose the best feasible item $x$ according to criterion $C$
-    \State $S \gets S \cup \{x\}$
-  \EndWhile
-  \State \Return $S$
-\end{algorithmic}
-\label{alg:example}
-\end{algorithm}
-
-\section{Illustrative Code Snippet (if applicable)}
-\label{sec:listings}
-Include small, focused excerpts that clarify core ideas or reproducibility steps. Keep captions short and descriptive.
-
-\begin{lstlisting}[language=Python,caption={Example function signature for a data transform},label={lst:snippet},float=htbp]
-def transform(records: list[dict]) -> list[dict]:
-    """Validate and normalize input records (example)."""
-    out = []
-    for r in records:
-        if "id" not in r:
-            continue
-        r = {k.strip().lower(): v for k, v in r.items()}
-        out.append(r)
-    return out
-\end{lstlisting}
-
-Reference listings with \cref{lst:snippet}. If advanced highlighting is required, consider \texttt{minted} (not enabled in this template by default to avoid external dependencies).
-
-\section{Research Motivation and Direction}
-\label{sec:motivation}
-\textbf{Purpose.} This subsection translates the state of the art (\cref{sec:related}) and the theoretical lens (\cref{sec:theory}) into a concrete research direction that is both \emph{necessary} (gap) and \emph{actionable} (methods and data you will actually use).
-
-\paragraph{Problem significance.}
-Briefly argue why the problem matters (scientific or practical). Identify stakeholders and decision contexts affected by your results.
-
-\paragraph{Identified gap.}
-From the comparison in \cref{sec:related}, distill the unmet need (e.g., missing evaluation setting, scalability constraint, domain misfit, weak external validity). Define the gap in one or two sentences that are testable or measurable.
-
-\paragraph{Direction and scope.}
-State the research direction you will pursue to address the gap, together with scope boundaries (what is deliberately out of scope). Link this direction to the thesis \emph{Aim} and \emph{Tasks} defined in the Introduction and to the task→chapter mapping (see Table in the Introduction).
-
-\paragraph{Success criteria.}
-Name the primary evaluation criteria (metrics or qualitative outcomes) that will determine whether the approach succeeds in your empirical chapter.
-
-\section{Chapter Summary}
-\label{sec:summary}
-This chapter (i) fixed key concepts (\cref{sec:concepts}), (ii) compared approaches and exposed a concrete gap (\cref{sec:related}), and (iii) established the theoretical lens (\cref{sec:theory}). The \textbf{Research Motivation and Direction} (\cref{sec:motivation}) specifies how the thesis will address that gap, setting up the next chapter’s analysis of the case/system.
-
-\noindent\textbf{Conclusions (for Chapter~1).}
-We defined the conceptual vocabulary, contrasted major approaches with evidence, and selected a theory consistent with the problem setting. A concrete gap has been articulated together with success criteria and scope. These choices motivate the analysis in Chapter~\ref{chap:analysis} and the empirical design in Chapter~\ref{chap:empirical}.
+\subsection{Medium and Large Enterprises in the Latvian Context}
+In accordance with the European Commission enterprise size classification, 
+a medium enterprise is defined as an organization employing between 50 and 249 
+persons, while a large enterprise employs 250 or more persons \cite{ec2003}. 
+This thesis targets medium and large Latvian enterprises as they are more likely 
+to have established formal PMO structures and sufficiently complex information 
+system landscapes to make integration maturity a relevant concern.
