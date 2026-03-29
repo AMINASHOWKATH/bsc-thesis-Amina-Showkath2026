@@ -1,93 +1,178 @@
-\chapter{Case / System Analysis (Example Chapter~2)}
+\chapter{Research Methodology}
 \label{chap:analysis}
 
-% --- IMPORTANT NOTE FOR STUDENTS ---
-% This is only a suggested structure and sample content.
-% You are free to modify, reorder, merge, or rename sections
-% if it makes sense for your topic — as long as your supervisor agrees.
+This chapter presents the research methodology applied in this thesis. It describes 
+the overall research design, the operationalization of the Integration Maturity Model, 
+the design of the survey instrument and expert interviews, the data collection 
+procedure, and the statistical methods used to analyze the collected data.
 
-This chapter often provides a structured analysis of the case, dataset, or system that your thesis investigates.  
-However, its scope and layout depend heavily on the chosen topic. Some theses merge this part into the empirical chapter; others expand it into multiple chapters.  
-Think of the following sections as \emph{examples}, not as mandatory rules.
+\section{Research Design and Approach}
+\label{sec:design}
 
-\section{General Characteristics of the Case / System (Example Section)}
-\label{sec:case}
-Here you may describe the case or system under study (e.g., an IT application, dataset, algorithm, protocol, or infrastructure).  
-Mention background, design, stakeholders, or technical architecture.  
+This thesis adopts a quantitative research design, supplemented by qualitative 
+expert interviews. The primary research strategy is a cross-sectional survey study, 
+in which data is collected from multiple organizations at a single point in time. 
+This design is appropriate for the research aim, which is to assess the current 
+distribution of IS integration maturity levels across PMO environments in Latvian 
+enterprises and examine its relationships with reporting automation, data quality, 
+and governance standardization \cite{saunders2019}.
 
-\paragraph{Note.} Adapt the level of detail to your project.  
-If your work is purely theoretical, this section can be shorter. If it is applied to a concrete system or dataset, give enough context so the reader understands what is being studied.
+The philosophical stance of the study is post-positivist, assuming that an 
+objective reality exists and can be measured through structured instruments, 
+while acknowledging that measurement is subject to some degree of error. This 
+stance is consistent with the use of Likert-scale survey items and statistical 
+analysis as the primary data collection and analysis methods.
 
-\section{Analysis of Internal and External Environment (Optional Example)}
-\label{sec:env}
-Depending on your topic, you might include a structured breakdown of the system.  
-Possible angles include (choose those that fit, or invent your own):
+The research follows a deductive approach, in which the four hypotheses stated 
+in the Introduction are derived from the theoretical framework presented in 
+Chapter~1 and tested against empirical data collected from Latvian enterprises.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item \textbf{Architecture.} Components, modules, services, or data pipelines.
-  \item \textbf{Performance.} Scalability, latency, throughput, bottlenecks.
-  \item \textbf{Security and reliability.} Threats, vulnerabilities, resilience.
-  \item \textbf{External factors.} Standards, APIs, dependencies, regulations.
-\end{itemize}
+\section{Operationalization of the Integration Maturity Model}
+\label{sec:operationalization}
 
-Support your analysis with diagrams, tables, or references if relevant.
+The four-level Integration Maturity Model (IMM) proposed in Chapter~1 serves as 
+the primary measurement framework. To enable survey-based measurement, each 
+maturity level is operationalized through a set of observable, measurable 
+indicators, as presented in Table~\ref{tab:imm-operationalization}.
 
-% --- Example figure (replace or remove) ---
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.65\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-  \figsource{Replace with your own system diagram (if needed).}
-  \caption{Example system architecture diagram.}
-  \label{fig:analysis-example}
-\end{figure}
-
-% --- Example table (replace or remove) ---
 {\singlespacing
 \begin{table}[h]
-  \caption{Example system metrics (dummy data)}
-  \label{tab:analysis-example}
+  \caption{Operationalization of Integration Maturity Model levels}
+  \label{tab:imm-operationalization}
   \centering
-  \begin{tabular}{lrr}
+  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.35\linewidth}p{0.30\linewidth}}
     \toprule
-    Metric & Baseline value & Target value \\
+    \textbf{Level} & \textbf{Name} & \textbf{Observable Indicators} & 
+    \textbf{Survey Items}\\
     \midrule
-    Response time (ms)  & 240   & 120   \\
-    Uptime (\%)         & 97.5  & 99.9  \\
-    Requests / second   & 350   & 1000  \\
+    1 & Initial & No system connections; all data consolidated manually in 
+    spreadsheets; no automated reports & 
+    "Data is consolidated manually from multiple tools into spreadsheets"\\
+    2 & Developing & Some file-based exports between systems; partial 
+    automation; scheduled report generation & 
+    "Some systems share data via file exports (CSV/Excel)"\\
+    3 & Defined & API connections between key systems; automated data flows; 
+    near real-time reporting & 
+    "Systems are connected via APIs; reports are generated automatically"\\
+    4 & Optimized & Full platform integration; unified BI dashboard; 
+    real-time portfolio visibility & 
+    "All systems are fully integrated in a unified platform with real-time dashboards"\\
     \bottomrule
   \end{tabular}
 \end{table}
 }
 
-\section{Context, Constraints, and Risks (Optional)}
-\label{sec:constraints}
-In some topics, it is useful to state the limitations and boundary conditions that affect your system. Examples:
+Respondents are asked to select the description that best matches their 
+organization's current PMO IS integration approach. The selected level serves 
+as the primary independent variable in the analysis.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Technical constraints (hardware, data availability, standards compliance).
-  \item Research constraints (time, scope, access rights).
-  \item Risks (privacy, security, reliability, scalability challenges).
+\section{Survey Instrument Design}
+\label{sec:survey}
+
+The survey instrument was designed to measure the key constructs of the study: 
+integration maturity level, reporting automation, data quality, and governance 
+standardization. The instrument consists of four parts:
+
+\begin{itemize}
+    \item \textbf{Part A --- Organizational Profile:} Questions about the 
+    organization's size, industry, and PMO structure (categorical items).
+    \item \textbf{Part B --- Integration Maturity Assessment:} A single 
+    categorical item in which respondents select the IMM level that best 
+    describes their PMO's IS integration approach, supplemented by 
+    Likert-scale items measuring specific integration practices.
+    \item \textbf{Part C --- Reporting Automation and Data Quality:} 
+    Five-point Likert-scale items measuring the degree of reporting 
+    automation and perceived data accuracy and timeliness.
+    \item \textbf{Part D --- Governance Standardization:} Five-point 
+    Likert-scale items measuring the degree of governance standardization 
+    in PMO processes.
 \end{itemize}
 
-This subsection can be skipped if not relevant.
+All Likert-scale items use a five-point response scale ranging from 
+1 (Strongly Disagree) to 5 (Strongly Agree). The survey was designed in 
+English and distributed electronically via Google Forms. The estimated 
+completion time is 10--15 minutes.
 
-\section{Data and Methods for the Analysis (Example)}
-\label{sec:datamethods}
-Briefly outline what data and methods you are using here.  
-Examples: logs, benchmark datasets, architectural specifications, monitoring tools.  
-Methods could include profiling, simulation, descriptive statistics, or qualitative inspection.  
-Adapt this to your project; the goal is only to show that your analysis has a methodological basis.
+\section{Expert Interview Design}
+\label{sec:interviews}
 
-\section{Sub-Conclusions (for Chapter~2)}
-\label{sec:subconcl}
-End with a short synthesis (typically 1–3 paragraphs).  
-Example points to cover:
+To supplement the quantitative survey findings with qualitative depth, 
+2--3 structured expert interviews are conducted with PMO leads, IT architects, 
+or digital transformation managers from Latvian enterprises. The interviews 
+follow a structured protocol with open-ended questions covering the following 
+themes:
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item What the analysis revealed (main technical insights).
-  \item Which constraints/risks are most critical for your research.
-  \item How this motivates the next step (empirical study in Chapter~\ref{chap:empirical}).
+\begin{itemize}
+    \item The current state of IS integration in the respondent's PMO environment
+    \item Challenges experienced due to low integration maturity
+    \item The role of BI and dashboard systems in governance standardization
+    \item Perceived barriers to advancing integration maturity
+    \item Practical recommendations for improving PMO IS integration
 \end{itemize}
 
-\paragraph{Reminder.} This subsection is not meant to repeat the whole chapter — just connect the dots and prepare for the next one.
+Interview responses are analyzed qualitatively using thematic analysis to 
+identify patterns and insights that complement the quantitative findings.
 
+\section{Data Collection Procedure}
+\label{sec:datacollection}
+
+The survey is distributed to representatives of medium and large Latvian 
+enterprises (50+ employees) with formal PMO structures. The target sample 
+size is 30--50 responses, which is sufficient for the planned descriptive 
+and correlational statistical analyses \cite{field2018}. Respondents are 
+identified through professional networks, LinkedIn, and direct organizational 
+contacts. Only one response per organization is accepted to ensure independence 
+of observations.
+
+Data collection takes place over a period of four to six weeks. All responses 
+are anonymous and stored securely in accordance with data protection principles. 
+Participation is voluntary and respondents are informed of the purpose of the 
+study prior to completing the survey.
+
+\section{Data Analysis Methods}
+\label{sec:analysis}
+
+The collected data is analyzed using the following statistical methods:
+
+\textbf{Descriptive statistics.} Frequency distributions and percentages are 
+used to describe the distribution of integration maturity levels across the 
+sample. Mean scores and standard deviations are calculated for Likert-scale 
+items measuring reporting automation, data quality, and governance 
+standardization.
+
+\textbf{Normality testing.} The Shapiro-Wilk test is applied to determine 
+whether the data follows a normal distribution, which informs the choice 
+between parametric (Pearson) and non-parametric (Spearman) correlation 
+analysis \cite{field2018}.
+
+\textbf{Correlation analysis.} Pearson or Spearman correlation coefficients 
+are calculated to examine the relationships between integration maturity level 
+and the three dependent variables: reporting automation, data quality, and 
+governance standardization. Statistical significance is assessed at the 
+$p < 0.05$ level.
+
+\textbf{Regression analysis.} Simple linear regression is applied to examine 
+the predictive relationship between integration maturity level and each 
+dependent variable, allowing for quantification of the strength and direction 
+of the relationships.
+
+\textbf{Qualitative analysis.} Expert interview transcripts are analyzed using 
+thematic analysis to identify recurring themes and insights that supplement 
+the quantitative findings.
+
+All quantitative analyses are conducted using SPSS or R statistical software.
+
+\section{Chapter Summary}
+\label{sec:chap2summary}
+
+This chapter described the research methodology applied in this thesis. 
+A quantitative cross-sectional survey design with qualitative expert interview 
+supplementation was adopted. The four-level Integration Maturity Model was 
+operationalized into measurable survey indicators. The survey instrument was 
+designed to measure integration maturity, reporting automation, data quality, 
+and governance standardization across PMO environments in Latvian enterprises. 
+Data collection targets 30--50 responses from medium and large Latvian 
+enterprises with formal PMO structures. Statistical analysis methods including 
+descriptive statistics, normality testing, correlation analysis, and regression 
+analysis are applied to test the four research hypotheses. The results of the 
+empirical study are presented in Chapter~3.
