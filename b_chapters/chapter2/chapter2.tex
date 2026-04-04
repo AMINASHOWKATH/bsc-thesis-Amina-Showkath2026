@@ -1,344 +1,673 @@
-\chapter{Research Methodology}
-\label{chap:analysis}
+\chapter{Research Methodology} 
 
-This chapter presents the research methodology applied in this thesis. It describes 
-the overall research design, the operationalization of the Integration Maturity Model, 
-the design of the survey instrument and expert interviews, the data collection 
-procedure, and the statistical methods used to analyze the collected data.
+\label{chap:analysis} 
 
-\section{Research Design and Approach}
-\label{sec:design}
+ 
 
-This thesis adopts a quantitative research design, supplemented by qualitative 
-expert interviews. The primary research strategy is a cross-sectional survey study, 
-in which data is collected from multiple organizations at a single point in time. 
-This design is appropriate for the research aim, which is to assess the current 
-distribution of IS integration maturity levels across PMO environments in Latvian 
-enterprises and examine its relationships with reporting automation, data quality, 
-and governance standardization \cite{saunders2019}.
+This chapter presents the research methodology applied in this thesis. It describes the overall 
 
-The philosophical stance of the study is post-positivist, assuming that an 
-objective reality exists and can be measured through structured instruments, 
-while acknowledging that measurement is subject to some degree of error. This 
-stance is consistent with the use of Likert-scale survey items and statistical 
-analysis as the primary data collection and analysis methods.
+ research design, the operationalization of the Integration Maturity Model, the design of the 
 
-The research follows a deductive approach, in which the four hypotheses stated 
-in the Introduction are derived from the theoretical framework presented in 
-Chapter~1 and tested against empirical data collected from Latvian enterprises.
+ survey instrument and expert interviews, data collection procedure, and the statistical methods  
 
-\section{Operationalization of the Integration Maturity Model}
-\label{sec:operationalization}
+used to analyze the collected data.  
 
-The four-level Integration Maturity Model (IMM) proposed in Chapter~1 serves as 
-the primary measurement framework. To enable survey-based measurement, each 
-maturity level is operationalized through a set of observable, measurable 
-indicators, as presented in Table~\ref{tab:imm-operationalization}.
+  
 
-{\singlespacing
-\begin{table}[h]
-  \caption{Operationalization of Integration Maturity Model levels}
-  \label{tab:imm-operationalization}
-  \centering
-  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.35\linewidth}p{0.30\linewidth}}
-    \toprule
-    \textbf{Level} & \textbf{Name} & \textbf{Observable Indicators} & 
-    \textbf{Survey Items}\\
-    \midrule
-    1 & Initial & No system connections; all data consolidated manually in 
-    spreadsheets; no automated reports & 
-    "Data is consolidated manually from multiple tools into spreadsheets"\\
-    2 & Developing & Some file-based exports between systems; partial 
-    automation; scheduled report generation & 
-    "Some systems share data via file exports (CSV/Excel)"\\
-    3 & Defined & API connections between key systems; automated data flows; 
-    near real-time reporting & 
-    "Systems are connected via APIs; reports are generated automatically"\\
-    4 & Optimized & Full platform integration; unified BI dashboard; 
-    real-time portfolio visibility & 
-    "All systems are fully integrated in a unified platform with real-time dashboards"\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-}
+\section{Research Design and Approach} 
 
-Respondents are asked to select the description that best matches their 
-organization's current PMO IS integration approach. The selected level serves 
-as the primary independent variable in the analysis.
+\label{sec:design} 
 
-\section{Survey Instrument Design}
-\label{sec:survey}
+This thesis adopts a quantitative research design, complemented by qualitative expert 
 
-The survey instrument was designed to measure the key constructs of the study: 
-integration maturity level, reporting automation, data quality, and governance 
-standardization. The instrument consists of four parts:
+ interviews. The principal research methodology is a cross-sectional survey study, in  
 
-\begin{itemize}
-    \item \textbf{Part A --- Organizational Profile:} Questions about the 
-    organization's size, industry, and PMO structure (categorical items).
-    \item \textbf{Part B --- Integration Maturity Assessment:} A single 
-    categorical item in which respondents select the IMM level that best 
-    describes their PMO's IS integration approach, supplemented by 
-    Likert-scale items measuring specific integration practices.
-    \item \textbf{Part C --- Reporting Automation and Data Quality:} 
-    Five-point Likert-scale items measuring the degree of reporting 
-    automation and perceived data accuracy and timeliness.
-    \item \textbf{Part D --- Governance Standardization:} Five-point 
-    Likert-scale items measuring the degree of governance standardization 
-    in PMO processes.
-\end{itemize}
+which the data is gathered from various organizations at a singular moment in time.  
 
-All Likert-scale items use a five-point response scale ranging from 
-1 (Strongly Disagree) to 5 (Strongly Agree). The survey was designed in 
-English and distributed electronically via Google Forms. The estimated 
-completion time is 10--15 minutes.
+This design is appropriate for the research objective, which is to evaluate the present distribution 
 
-\section{Survey Questionnaire}
-\label{sec:questionnaire}
+ of IS integration maturity levels within PMO environments in Latvian enterprises and to 
 
-The complete survey instrument is presented in 
-Table~\ref{tab:survey-questions}. Each item is aligned with a specific 
-research construct and hypothesis.
+ examine its correlations with reporting automation, data quality, and governance 
 
-{\singlespacing
-\begin{table}[h]
-  \caption{Survey instrument items by construct and hypothesis}
-  \label{tab:survey-questions}
-  \centering
-  \begin{tabular}{p{0.05\linewidth}p{0.40\linewidth}p{0.25\linewidth}p{0.15\linewidth}}
-    \toprule
-    \textbf{No.} & \textbf{Survey Item} & \textbf{Construct} & 
-    \textbf{Hypothesis}\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part A --- Organizational Profile}}\\
-    A1 & How many employees does your organization have? 
-    (50--249 / 250+) & Organization size & --\\
-    A2 & What industry does your organization operate in? 
-    (categorical) & Industry sector & --\\
-    A3 & How long has your PMO been formally established? 
-    (years) & PMO maturity & --\\
-    A4 & How many active projects does your PMO currently oversee? 
-    (numerical) & PMO scope & --\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part B --- Integration Maturity Assessment}}\\
-    B1 & Which of the following best describes how data flows 
-    between your PMO's information systems? (select one IMM level 
-    description) & Integration maturity level & H1\\
-    B2 & Our PMO systems share data automatically without manual 
-    intervention. & Integration automation & H1, H2\\
-    B3 & Our PMO uses API connections between project tracking, 
-    financial, and reporting tools. & API integration & H2\\
-    B4 & Our PMO relies on manual data entry or file exports 
-    (CSV/Excel) to consolidate project data. & Manual integration & H1, H2\\
-    B5 & Our PMO operates within a unified platform ecosystem 
-    where all systems are fully integrated. & Platform integration & H1, H2\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part C --- Reporting Automation and Data Quality}}\\
-    C1 & Project status reports in our PMO are generated 
-    automatically from integrated systems. & Reporting automation & H2\\
-    C2 & Our PMO dashboards are updated in real time without 
-    manual intervention. & Reporting automation & H2\\
-    C3 & The data in our PMO reports is accurate and reliable. & 
-    Data accuracy & H3\\
-    C4 & Project data is available in a timely manner for 
-    decision-making. & Data timeliness & H3\\
-    C5 & We frequently encounter errors or inconsistencies in 
-    our PMO reporting data. (reverse scored) & Data quality & H3\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part D --- Governance Standardization}}\\
-    D1 & Our PMO follows standardized processes for project 
-    reporting across all projects. & Governance standardization & H4\\
-    D2 & Our PMO uses centralized dashboards to monitor all 
-    projects in one place. & BI centralization & H4\\
-    D3 & Project governance processes in our PMO are consistently 
-    applied across all departments. & Governance consistency & H4\\
-    D4 & Our PMO has clearly defined and documented standards 
-    for data collection and reporting. & Governance documentation & H4\\
-    D5 & The use of centralized BI tools has improved governance 
-    standardization in our PMO. & BI-governance link & H4\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-}
+ standardization \cite{saunders2019}. 
 
-\paragraph{Note on scaling.}
-All items in Parts B--D use a five-point Likert scale: 
-1 = Strongly Disagree, 2 = Disagree, 3 = Neutral, 
-4 = Agree, 5 = Strongly Agree. Item C5 is reverse scored, 
-meaning higher values indicate lower data quality issues.
+ 
 
-\section{Expert Interview Design}
-\label{sec:interviews}
+The research follows a deductive approach, in which the four hypotheses stated  
 
-To supplement the quantitative survey findings with qualitative depth, 
-2--3 structured expert interviews are conducted with PMO leads, IT architects, 
-or digital transformation managers from Latvian enterprises. The interviews 
-follow a structured protocol with open-ended questions covering the following 
-themes:
+in the Introduction are derived from the theoretical framework presented in  
 
-\begin{itemize}
-    \item The current state of IS integration in the respondent's PMO environment
-    \item Challenges experienced due to low integration maturity
-    \item The role of BI and dashboard systems in governance standardization
-    \item Perceived barriers to advancing integration maturity
-    \item Practical recommendations for improving PMO IS integration
-\end{itemize}
+Chapter~1 and tested against empirical data collected from Latvian enterprises. 
 
-Interview responses are analyzed qualitatively using thematic analysis to 
-identify patterns and insights that complement the quantitative findings.
+  
 
-\section{Data Collection Procedure}
-\label{sec:datacollection}
+\section{Operationalization of the Integration Maturity Model} 
 
-The survey is distributed to representatives of medium and large Latvian 
-enterprises (50+ employees) with formal PMO structures. The target sample 
-size is 30--50 responses, which is sufficient for the planned descriptive 
-and correlational statistical analyses \cite{field2018}. Respondents are 
-identified through professional networks, LinkedIn, and direct organizational 
-contacts. Only one response per organization is accepted to ensure independence 
-of observations.
+\label{sec:operationalization} 
 
-Data collection takes place over a period of four to six weeks. All responses 
-are anonymous and stored securely in accordance with data protection principles. 
-Participation is voluntary and respondents are informed of the purpose of the 
-study prior to completing the survey.
+  
 
-\section{Data Analysis Methods}
-\label{sec:analysis}
+The four-level Integration Maturity Model (IMM) proposed in Chapter~1 serves as  
 
-The collected data is analyzed using the following statistical methods:
+the primary measurement framework. To enable survey-based measurement, each  
 
-\textbf{Descriptive statistics.} Frequency distributions and percentages are 
-used to describe the distribution of integration maturity levels across the 
-sample. Mean scores and standard deviations are calculated for Likert-scale 
-items measuring reporting automation, data quality, and governance 
-standardization.
+maturity level is operationalized through a set of observable, measurable  
 
-\textbf{Normality testing.} The Shapiro-Wilk test is applied to determine 
-whether the data follows a normal distribution, which informs the choice 
-between parametric (Pearson) and non-parametric (Spearman) correlation 
-analysis \cite{field2018}.
+indicators, as presented in Table~\ref{tab:imm-operationalization}. 
 
-\textbf{Correlation analysis.} Pearson or Spearman correlation coefficients 
-are calculated to examine the relationships between integration maturity level 
-and the three dependent variables: reporting automation, data quality, and 
-governance standardization. Statistical significance is assessed at the 
-$p < 0.05$ level.
+  
 
-\textbf{Regression analysis.} Simple linear regression is applied to examine 
-the predictive relationship between integration maturity level and each 
-dependent variable, allowing for quantification of the strength and direction 
-of the relationships.
+{\singlespacing 
 
-\textbf{Qualitative analysis.} Expert interview transcripts are analyzed using 
-thematic analysis to identify recurring themes and insights that supplement 
-the quantitative findings.
+\begin{table}[h] 
 
-All quantitative analyses are conducted using SPSS or R statistical software.
+  \caption{Operationalization of Integration Maturity Model levels} 
 
-\section{Validity and Reliability}
-\label{sec:validity}
+  \label{tab:imm-operationalization} 
 
-To ensure the quality of the research instrument and findings, the following 
-measures are taken to address validity and reliability.
+  \centering 
 
-\textbf{Content validity.} The survey items were designed based on established 
-theoretical frameworks — specifically the Integration Maturity Model proposed 
-in Chapter~1, the CMMI framework \cite{paulk1993}, and the data quality 
-dimensions from DAMA-DMBOK \cite{dama2017}. Each survey item is explicitly 
-linked to a research construct and hypothesis, ensuring that the instrument 
-measures what it is intended to measure.
+  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.35\linewidth}p{0.30\linewidth}} 
 
-\textbf{Construct validity.} The survey constructs — integration maturity, 
-reporting automation, data quality, and governance standardization — are 
-operationalized based on definitions from peer-reviewed literature and 
-established frameworks. Multiple items per construct are included to reduce 
-measurement error and improve construct coverage.
+    \toprule 
 
-\textbf{Internal consistency reliability.} Cronbach's alpha coefficient will 
-be calculated for each multi-item construct scale to assess internal 
-consistency. A Cronbach's alpha value of 0.70 or above is considered 
-acceptable for research purposes \cite{field2018}.
+    \textbf{Level} & \textbf{Name} & \textbf{Observable Indicators} &  
 
-\textbf{External validity.} The study targets a specific population — 
-representatives of medium and large Latvian enterprises with formal PMO 
-structures. While the findings may not be directly generalizable to all 
-organizations globally, they are intended to be representative of the 
-Latvian enterprise context within the defined scope.
+    \textbf{Survey Items}\\ 
 
-\section{Research Ethics}
-\label{sec:ethics}
+    \midrule 
 
-This study adheres to the following ethical principles throughout the data 
-collection and analysis process:
+    1 & Initial & No system connections; all data consolidated manually in  
 
-\begin{itemize}
-    \item \textbf{Voluntary participation.} All survey respondents and 
-    interview participants participate voluntarily and may withdraw at 
-    any time without consequence.
-    \item \textbf{Informed consent.} Respondents are informed of the 
-    purpose of the study, how their data will be used, and who will 
-    have access to the results before completing the survey.
-    \item \textbf{Anonymity and confidentiality.} Survey responses are 
-    collected anonymously. No personally identifiable information is 
-    collected or stored. Interview participants are anonymized in the 
-    thesis unless explicit consent for identification is provided.
-    \item \textbf{Data protection.} All collected data is stored securely 
-    and processed in accordance with the General Data Protection Regulation 
-    (GDPR) and applicable Latvian data protection legislation.
-    \item \textbf{Honest reporting.} All findings are reported accurately 
-    and without manipulation, including results that do not support the 
-    research hypotheses.
-\end{itemize}
+    spreadsheets; no automated reports &  
 
-\section{Limitations of the Research Design}
-\label{sec:limitations}
+    "Data is consolidated manually from multiple tools into spreadsheets"\\ 
 
-While this study is designed to provide a rigorous empirical assessment of 
-IS integration maturity in PMO environments in Latvia, several limitations 
-must be acknowledged.
+    2 & Developing & Some file-based exports between systems; partial  
 
-\textbf{Self-reported data.} The survey relies on self-reported perceptions 
-of PMO representatives, which may be subject to social desirability bias — 
-respondents may rate their organization's integration maturity higher than 
-it actually is. To mitigate this, the survey includes specific behavioral 
-indicators rather than general self-assessment questions.
+    automation; scheduled report generation &  
 
-\textbf{Sample size.} The target sample of 30--50 responses is sufficient 
-for descriptive and correlational analysis but limits the statistical power 
-of regression models and prevents subgroup analysis by industry or 
-organization size. Future research with larger samples would strengthen 
-the generalizability of findings.
+    "Some systems share data via file exports (CSV/Excel)"\\ 
 
-\textbf{Cross-sectional design.} The study captures a snapshot of integration 
-maturity at a single point in time and cannot establish causal relationships 
-between integration maturity and the dependent variables. Longitudinal 
-research would be needed to confirm causal direction.
+    3 & Defined & API connections between key systems; automated data flows;  
 
-\textbf{Geographic scope.} The study is deliberately bounded to Latvian 
-enterprises, which limits the generalizability of findings to other national 
-or regional contexts. However, this scope is appropriate given the research 
-aim of providing Latvia-specific empirical evidence.
+    near real-time reporting &  
 
-\textbf{Construct measurement.} Integration maturity is measured through 
-a self-developed instrument rather than a previously validated scale, as no 
-existing validated scale specifically measures IS integration maturity in 
-PMO environments. While the instrument is grounded in established theoretical 
-frameworks, its psychometric properties require further validation in 
-future research.
+    "Systems are connected via APIs; reports are generated automatically"\\ 
 
-\section{Chapter Summary}
-\label{sec:chap2summary}
+    4 & Optimized & Full platform integration; unified BI dashboard;  
 
-This chapter described the research methodology applied in this thesis. 
-A quantitative cross-sectional survey design with qualitative expert interview 
-supplementation was adopted. The four-level Integration Maturity Model was 
-operationalized into measurable survey indicators. The survey instrument was 
-designed to measure integration maturity, reporting automation, data quality, 
-and governance standardization across PMO environments in Latvian enterprises. 
-Data collection targets 30--50 responses from medium and large Latvian 
-enterprises with formal PMO structures. Statistical analysis methods including 
-descriptive statistics, normality testing, correlation analysis, and regression 
-analysis are applied to test the four research hypotheses. Validity, reliability, 
-ethical principles, and research limitations were also addressed. The results 
-of the empirical study are presented in Chapter~3.
+    real-time portfolio visibility &  
+
+    "All systems are fully integrated in a unified platform with real-time dashboards"\\ 
+
+    \bottomrule 
+
+  \end{tabular} 
+
+\end{table} 
+
+} 
+
+Respondents are asked to select the description that best matches their  
+
+organization's current PMO IS integration approach. The chosen level functions   
+
+ as the primary independent variable in the study. 
+
+  
+
+\section{Survey Instrument Design} 
+
+\label{sec:survey} 
+
+  
+
+The survey instrument was designed to find out the main ideas of the study:   
+
+level of integration maturity, automation of reporting, quality of data, and standardization of 
+
+ governance. There are four sections to the instrument. 
+
+  
+
+\begin{itemize} 
+
+    \item \textbf{Part A --- Organizational Profile:} Questions about the  
+
+    organization's size, industry, and PMO structure (categorical items). 
+
+    \item \textbf{Part B --- Integration Maturity Assessment:} A single  
+
+    categorical item in which respondents select the IMM level that best  
+
+    describes their PMO's IS integration approach, supplemented by  
+
+    Likert-scale items measuring specific integration practices. 
+
+    \item \textbf{Part C --- Reporting Automation and Data Quality:}  
+
+    Five-point Likert-scale items measuring the degree of reporting  
+
+    automation and perceived data accuracy and timeliness. 
+
+    \item \textbf{Part D --- Governance Standardization:} Five-point  
+
+    Likert-scale items measuring the degree of governance standardization  
+
+    in PMO processes. 
+
+\end{itemize} 
+
+  
+
+All Likert-scale items use a five-point response scale ranging from  
+
+1 (Strongly Disagree) to 5 (Strongly Agree). The survey was designed in  
+
+English and distributed electronically via Google Forms. The estimated  
+
+completion time is 10--15 minutes. 
+
+  
+
+\section{Survey Questionnaire} 
+
+\label{sec:questionnaire} 
+
+  
+
+The complete survey instrument is presented in  
+
+Table~\ref{tab:survey-questions}. Each item is aligned with a specific  
+
+research construct and hypothesis. 
+
+  
+
+{\singlespacing 
+
+\begin{table}[h] 
+
+  \caption{Survey instrument items by construct and hypothesis} 
+
+  \label{tab:survey-questions} 
+
+  \centering 
+
+  \begin{tabular}{p{0.05\linewidth}p{0.40\linewidth}p{0.25\linewidth}p{0.15\linewidth}} 
+
+    \toprule 
+
+    \textbf{No.} & \textbf{Survey Item} & \textbf{Construct} &  
+
+    \textbf{Hypothesis}\\ 
+
+    \midrule 
+
+    \multicolumn{4}{l}{\textbf{Part A --- Organizational Profile}}\\ 
+
+    A1 & How many employees does your organization have?  
+
+    (50--249 / 250+) & Organization size & --\\ 
+
+    A2 & What industry does your organization operate in?  
+
+    (categorical) & Industry sector & --\\ 
+
+    A3 & How long has your PMO been formally established?  
+
+    (years) & PMO maturity & --\\ 
+
+    A4 & How many active projects does your PMO currently oversee?  
+
+    (numerical) & PMO scope & --\\ 
+
+    \midrule 
+
+    \multicolumn{4}{l}{\textbf{Part B --- Integration Maturity Assessment}}\\ 
+
+    B1 & Which of the following best describes how data flows  
+
+    between your PMO's information systems? (select one IMM level  
+
+    description) & Integration maturity level & H1\\ 
+
+    B2 & Our PMO systems share data automatically without manual  
+
+    intervention. & Integration automation & H1, H2\\ 
+
+    B3 & Our PMO uses API connections between project tracking,  
+
+    financial, and reporting tools. & API integration & H2\\ 
+
+    B4 & Our PMO relies on manual data entry or file exports  
+
+    (CSV/Excel) to consolidate project data. & Manual integration & H1, H2\\ 
+
+    B5 & Our PMO operates within a unified platform ecosystem  
+
+    where all systems are fully integrated. & Platform integration & H1, H2\\ 
+
+    \midrule 
+
+    \multicolumn{4}{l}{\textbf{Part C --- Reporting Automation and Data Quality}}\\ 
+
+    C1 & Project status reports in our PMO are generated  
+
+    automatically from integrated systems. & Reporting automation & H2\\ 
+
+    C2 & Our PMO dashboards are updated in real time without  
+
+    manual intervention. & Reporting automation & H2\\ 
+
+    C3 & The data in our PMO reports is accurate and reliable. &  
+
+    Data accuracy & H3\\ 
+
+    C4 & Project data is available in a timely manner for  
+
+    decision-making. & Data timeliness & H3\\ 
+
+    C5 & We frequently encounter errors or inconsistencies in  
+
+    our PMO reporting data. (reverse scored) & Data quality & H3\\ 
+
+    \midrule 
+
+    \multicolumn{4}{l}{\textbf{Part D --- Governance Standardization}}\\ 
+
+    D1 & Our PMO follows standardized processes for project  
+
+    reporting across all projects. & Governance standardization & H4\\ 
+
+    D2 & Our PMO uses centralized dashboards to monitor all  
+
+    projects in one place. & BI centralization & H4\\ 
+
+    D3 & Project governance processes in our PMO are consistently  
+
+    applied across all departments. & Governance consistency & H4\\ 
+
+    D4 & Our PMO has clearly defined and documented standards  
+
+    for data collection and reporting. & Governance documentation & H4\\ 
+
+    D5 & The use of centralized BI tools has improved governance  
+
+    standardization in our PMO. & BI-governance link & H4\\ 
+
+    \bottomrule 
+
+  \end{tabular} 
+
+\end{table} 
+
+} 
+
+  
+
+\paragraph{Note on scaling.} 
+
+All items in Parts B--D use a five-point Likert scale:  
+
+1 = Strongly Disagree, 2 = Disagree, 3 = Neutral,  
+
+4 = Agree, 5 = Strongly Agree. Item C5 is reverse scored,  
+
+meaning higher values indicate lower data quality issues. 
+
+  
+
+\section{Expert Interview Design} 
+
+\label{sec:interviews} 
+
+  
+
+To supplement the quantitative survey findings with qualitative depth,  
+
+2--3 structured expert interviews are conducted with PMO leads, IT architects,  
+
+or digital transformation managers from Latvian enterprises. The interviews  
+
+follow a structured protocol with open-ended questions covering the following  
+
+themes: 
+
+  
+
+\begin{itemize} 
+
+    \item The current state of IS integration in the respondent's PMO environment 
+
+    \item Challenges experienced due to low integration maturity 
+
+    \item The role of BI and dashboard systems in governance standardization 
+
+    \item Perceived barriers to advancing integration maturity 
+
+    \item Practical recommendations for improving PMO IS integration 
+
+\end{itemize} 
+
+  
+
+Interview responses are analyzed qualitatively using thematic analysis to  
+
+identify patterns and insights that complement the quantitative findings. 
+
+  
+
+\section{Data Collection Procedure} 
+
+\label{sec:datacollection} 
+
+  
+
+The survey is distributed to representatives of medium and large Latvian  
+
+enterprises (50+ employees) with formal PMO structures. The target sample  
+
+size is 30--50 responses, which is sufficient for the planned descriptive  
+
+and correlational statistical analyses \cite{field2018}. Respondents are  
+
+identified through professional networks, LinkedIn, and direct organizational  
+
+contacts. Only one response per organization is accepted to ensure independence  
+
+of observations. 
+
+Data collection takes place over a period of four to six weeks. All responses  
+
+are anonymous and stored securely in accordance with data protection principles.  
+
+Participation is voluntary and respondents are informed of the purpose of the  
+
+study prior to completing the survey. 
+
+  
+
+\section{Data Analysis Methods} 
+
+\label{sec:analysis} 
+
+  
+
+The collected data is analyzed using the following statistical methods: 
+
+  
+
+\textbf{Descriptive statistics.} Frequency distributions and percentages are  
+
+used to describe the distribution of integration maturity levels across the  
+
+sample. Mean scores and standard deviations are calculated for Likert-scale  
+
+items measuring reporting automation, data quality, and governance  
+
+standardization. 
+
+  
+
+\textbf{Normality testing.} The Shapiro-Wilk test is applied to determine  
+
+whether the data follows a normal distribution, which informs the choice  
+
+between parametric (Pearson) and non-parametric (Spearman) correlation  
+
+analysis \cite{field2018}. 
+
+  
+
+\textbf{Correlation analysis.} Pearson or Spearman correlation coefficients  
+
+are calculated to examine the relationships between integration maturity level  
+
+and the three dependent variables: reporting automation, data quality, and  
+
+governance standardization. Statistical significance is assessed at the  
+
+$p < 0.05$ level. 
+
+  
+
+\textbf{Regression analysis.} Simple linear regression is applied to examine  
+
+the predictive relationship between integration maturity level and each  
+
+dependent variable, allowing for quantification of the strength and direction  
+
+of the relationships. 
+
+  
+
+\textbf{Qualitative analysis.} Expert interview transcripts are analyzed using  
+
+thematic analysis to identify recurring themes and insights that supplement  
+
+the quantitative findings. 
+
+  
+
+All quantitative analyses are conducted using SPSS or R statistical software. 
+
+  
+
+\section{Validity and Reliability} 
+
+\label{sec:validity} 
+
+  
+
+To ensure the quality of the research instrument and findings, the following  
+
+measures are taken to address validity and reliability. 
+
+  
+
+\textbf{Content validity.} The survey items were designed based on established  
+
+theoretical frameworks — specifically the Integration Maturity Model proposed  
+
+in Chapter~1, the CMMI framework \cite{paulk1993}, and the data quality  
+
+dimensions from DAMA-DMBOK \cite{dama2017}. Each survey item is explicitly  
+
+linked to a research construct and hypothesis, ensuring that the instrument  
+
+measures what it is intended to measure. 
+
+  
+
+\textbf{Construct validity.} The survey constructs — integration maturity,  
+
+reporting automation, data quality, and governance standardization — are  
+
+operationalized based on definitions from peer-reviewed literature and  
+
+established frameworks. Multiple items per construct are included to reduce  
+
+measurement error and improve construct coverage. 
+
+  
+
+\textbf{Internal consistency reliability.} Cronbach's alpha coefficient will  
+
+be calculated for each multi-item construct scale to assess internal  
+
+consistency. A Cronbach's alpha value of 0.70 or above is considered  
+
+acceptable for research purposes \cite{field2018}. 
+
+  
+
+\textbf{External validity.} The study targets a specific population —  
+
+representatives of medium and large Latvian enterprises with formal PMO  
+
+structures. While the findings may not be directly generalizable to all  
+
+organizations globally, they are intended to be representative of the  
+
+Latvian enterprise context within the defined scope. 
+
+  
+
+\section{Research Ethics} 
+
+\label{sec:ethics} 
+
+  
+
+This study adheres to the following ethical principles throughout the data  
+
+collection and analysis process: 
+
+  
+
+\begin{itemize} 
+
+    \item \textbf{Voluntary participation.} All survey respondents and  
+
+    interview participants participate voluntarily and may withdraw at  
+
+    any time without consequence. 
+
+    \item \textbf{Informed consent.} Respondents are informed of the  
+
+    purpose of the study, how their data will be used, and who will  
+
+    have access to the results before completing the survey. 
+
+    \item \textbf{Anonymity and confidentiality.} Survey responses are  
+
+    collected anonymously. No personally identifiable information is  
+
+    collected or stored. Interview participants are anonymized in the  
+
+    thesis unless explicit consent for identification is provided. 
+
+    \item \textbf{Data protection.} All collected data is stored securely  
+
+    and processed in accordance with the General Data Protection Regulation  
+
+    (GDPR) and applicable Latvian data protection legislation. 
+
+    \item \textbf{Honest reporting.} All findings are reported accurately  
+
+    and without manipulation, including results that do not support the  
+
+    research hypotheses. 
+
+\end{itemize} 
+
+  
+
+\section{Limitations of the Research Design} 
+
+\label{sec:limitations} 
+
+  
+
+While this study is designed to provide a rigorous empirical assessment of  
+
+IS integration maturity in PMO environments in Latvia, several limitations  
+
+must be acknowledged. 
+
+  
+
+\textbf{Self-reported data.} The survey relies on self-reported perceptions  
+
+of PMO representatives, which may be subject to social desirability bias —  
+
+respondents may rate their organization's integration maturity higher than  
+
+it actually is. To mitigate this, the survey includes specific behavioral  
+
+indicators rather than general self-assessment questions. 
+
+  
+
+\textbf{Sample size.} The target sample of 30--50 responses is sufficient  
+
+for descriptive and correlational analysis but limits the statistical power  
+
+of regression models and prevents subgroup analysis by industry or  
+
+organization size. Future research with larger samples would strengthen  
+
+the generalizability of findings. 
+
+  
+
+\textbf{Cross-sectional design.} The study captures a snapshot of integration  
+
+maturity at a single point in time and cannot establish causal relationships  
+
+between integration maturity and the dependent variables. Longitudinal  
+
+research would be needed to confirm causal direction. 
+
+  
+
+\textbf{Geographic scope.} The study is deliberately bounded to Latvian  
+
+enterprises, which limits the generalizability of findings to other national  
+
+or regional contexts. However, this scope is appropriate given the research  
+
+aim of providing Latvia-specific empirical evidence. 
+
+  
+
+\textbf{Construct measurement.} Integration maturity is measured through  
+
+a self-developed instrument rather than a previously validated scale, as no  
+
+existing validated scale specifically measures IS integration maturity in  
+
+PMO environments. While the instrument is grounded in established theoretical  
+
+frameworks, its psychometric properties require further validation in  
+
+future research. 
+
+  
+
+\section{Chapter Summary} 
+
+\label{sec:chap2summary} 
+
+  
+
+This chapter described the research methodology applied in this thesis.  
+
+A quantitative cross-sectional survey design complemented by qualitative expert  
+
+interviews was adopted. The four-level Integration Maturity Model was  
+
+turned into measurable survey indicators that could be used in real life. 
+
+The survey instrument was designed to measure integration maturity, reporting automation, 
+
+ data quality, and governance standardization across PMO environments in Latvian enterprises.  
+
+Data collection targets 30--50 responses from medium and large Latvian  
+
+enterprises with formal PMO structures. Statistical analysis methods including  
+
+descriptive statistics, normality testing, correlation analysis, and regression  
+
+analysis are applied to test the four research hypotheses. Validity, reliability,  
+
+ethical principles, and research limitations were also addressed. The results  
+
+of the empirical study are presented in Chapter~3.  
+
+ 
+
+ 
