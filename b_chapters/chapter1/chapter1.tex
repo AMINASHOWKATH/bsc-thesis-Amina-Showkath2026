@@ -1,345 +1,653 @@
-\chapter{Literature Review and Theoretical Background}
-\label{chap:litreview}
+\chapter{Literature Review and Theoretical Background} 
 
-\section{Core Concepts and Definitions}
-\label{sec:concepts}
+\label{chap:litreview} 
 
-This section defines the foundational terminology used throughout the thesis. 
-Each term is defined once and used consistently in subsequent chapters.
+  
 
-\subsection{Project Management Office (PMO)}
-A Project Management Office (PMO) is a centralized organizational unit responsible 
-for defining and maintaining project management standards, governance frameworks, 
-and reporting structures across an enterprise \cite{pmi2021}. According to the 
-Project Management Institute, PMOs can be classified into three types based on 
-their degree of control and influence:
+\section{Core Concepts and Definitions} 
 
-\begin{itemize}
-    \item \textbf{Supportive PMO} --- provides templates, best practices, and 
-    guidance with minimal direct control over projects;
-    \item \textbf{Controlling PMO} --- enforces compliance with project management 
-    frameworks and requires the use of specific methodologies;
-    \item \textbf{Directive PMO} --- takes direct control of projects, with project 
-    managers reporting directly to the PMO.
-\end{itemize}
+\label{sec:concepts} 
 
-In the context of this thesis, the term PMO refers to any formal organizational 
-unit in medium or large Latvian enterprises that fulfills at least a controlling 
-or directive function in project governance and reporting.
+ 
 
-\subsection{Project Management Information System (PMIS)}
-A Project Management Information System (PMIS) is a software-based system or 
-combination of tools used to support the planning, execution, monitoring, and 
-reporting of projects within a PMO environment \cite{laudon2015}. Common PMIS 
-tools include Microsoft Project, Jira, SAP, and Power BI. A PMIS may consist 
-of a single integrated platform or multiple specialized tools operating in 
-parallel, which introduces the challenge of information system integration.
+This section defines the foundational terminology used throughout the thesis.  
 
-\subsection{Information System Integration}
-Information system integration refers to the process of linking two or more 
-software systems so that data flows automatically between them without manual 
-intervention \cite{hohpe2004}. In PMO environments, integration typically occurs 
-between project tracking tools, financial systems, and reporting platforms. The 
-degree of integration can range from fully manual data consolidation to fully 
-automated, real-time data synchronization via Application Programming Interfaces 
-(APIs) or unified platform ecosystems.
+Each term is defined once and used consistently in subsequent chapters. 
 
-\subsection{Integration Maturity Model}
-A maturity model is a structured framework that describes the progressive 
-development of a capability across a defined set of levels \cite{paulk1993}. 
-In the context of information system integration, a maturity model defines 
-the stages through which an organization advances from basic, manual integration 
-practices toward fully automated, platform-level integration. This thesis adapts 
-the concept of maturity modeling to the specific context of PMO information 
-systems, proposing a four-level Integration Maturity Model as the primary 
-theoretical framework.
+  
 
-\subsection{Business Intelligence and Dashboard Systems}
-Business Intelligence (BI) refers to the technologies, processes, and practices 
-used to collect, integrate, analyze, and present business data to support 
-decision-making \cite{negash2004}. In PMO environments, BI systems typically 
-manifest as centralized dashboards that aggregate data from multiple project 
-and financial systems into a unified view. The presence or absence of centralized 
-BI systems is used in this thesis as an indicator of governance standardization 
-maturity.
+\subsection{Project Management Office (PMO)} 
 
-\subsection{Data Quality}
-Data quality refers to the degree to which data is accurate, complete, consistent, 
-and timely for its intended purpose \cite{dama2017}. In the context of PMO 
-reporting, data quality is directly influenced by the level of system integration: 
-manually consolidated data is more prone to errors and delays, while automated 
-integration reduces the risk of inconsistencies. This thesis measures data quality 
-through perceived data accuracy and timeliness as reported by PMO representatives.
+A Project Management Office (PMO) is a central part of an organization that is in charge of setting and keeping project management standards, governance frameworks and reporting structures across the whole company  \cite{pmi2021}. According to the Project Management Institute, PMOs can be classified into three types based on their degree of control and influence: 
 
-\subsection{Reporting Automation}
-Reporting automation refers to the use of software tools and system integrations 
-to generate project status reports, dashboards, and portfolio summaries without 
-manual data entry or manipulation \cite{pmi2021}. Automated reporting reduces 
-the administrative burden on PMO staff and improves the timeliness and consistency 
-of management information. In this thesis, reporting automation is operationalized 
-as the extent to which PMO reports are generated automatically from integrated 
-systems rather than compiled manually.
+  
 
-\subsection{Medium and Large Enterprises in the Latvian Context}
-In accordance with the European Commission enterprise size classification, 
-a medium enterprise is defined as an organization employing between 50 and 249 
-persons, while a large enterprise employs 250 or more persons \cite{ec2003}. 
-This thesis targets medium and large Latvian enterprises as they are more likely 
-to have established formal PMO structures and sufficiently complex information 
-system landscapes to make integration maturity a relevant concern.
+\begin{itemize} 
 
-\section{Related Work: Themes, Methods, and Evidence}
-\label{sec:related}
+    \item \textbf{Supportive PMO} --- provides templates, best practices, and  
 
-This section surveys existing research on PMO digitalization, information system 
-integration, and maturity models. Prior work is organized into five thematic 
-strands, which are contrasted to identify the gap that the present thesis addresses.
+    guidance with minimal direct control over projects; 
 
-\subsection{Traditional PMO Research and Manual Integration Practices}
-Early research on Project Management Offices focused primarily on process 
-standardization, governance frameworks, and the role of PMOs in improving 
-project delivery outcomes \cite{hobbs2007}. In this body of literature, 
-information systems were treated as secondary tools — typically spreadsheets 
-and standalone reporting software — rather than integrated platforms. Manual 
-data consolidation was the dominant practice, with PMO staff collecting data 
-from multiple sources and compiling reports manually. While this approach 
-established the theoretical foundations of PMO governance, it did not address 
-the challenges of system fragmentation or the consequences of low integration 
-maturity on reporting efficiency and data quality. The primary limitation of 
-this strand is its failure to account for the growing complexity of modern 
-PMO information system landscapes.
+    \item \textbf{Controlling PMO} --- enforces compliance with project management  
 
-\subsection{API-Based and Platform-Level Integration Research}
-A second strand of research examines the technical dimensions of information 
-system integration, focusing on API-based connectivity and platform-level 
-ecosystems \cite{hohpe2004}. Studies in this area demonstrate that organizations 
-adopting API-driven integration architectures achieve significantly higher levels 
-of reporting automation and data consistency compared to those relying on manual 
-or file-based data transfer \cite{laudon2015}. Platform ecosystems such as 
-Microsoft 365, SAP, and Jira provide native integration capabilities that reduce 
-the need for manual intervention. However, this research strand is predominantly 
-technical in orientation and does not systematically examine the organizational 
-or governance implications of integration maturity in PMO-specific contexts. 
-Furthermore, implementation costs and the technical expertise required for 
-API-based integration present significant barriers for medium-sized enterprises.
+    frameworks and requires the use of specific methodologies; 
 
-\subsection{Business Intelligence and Governance Standardization}
-A third research strand investigates the relationship between Business Intelligence 
-(BI) systems and organizational governance \cite{negash2004}. Studies consistently 
-show that organizations with centralized BI dashboards demonstrate higher levels 
-of governance standardization, as real-time data visibility enables more consistent 
-decision-making and performance monitoring across projects \cite{pmi2021}. This 
-strand is particularly relevant to the present thesis, as it provides theoretical 
-support for Hypothesis 4 — that the use of centralized BI systems is associated 
-with higher governance standardization in PMO processes. The main limitation of 
-this research strand is its focus on large enterprises, with limited attention 
-to medium-sized organizations or specific regional contexts.
+    \item \textbf{Directive PMO} --- takes direct control of projects, with project  
 
-\subsection{Maturity Model Frameworks in Information Systems Research}
-The fourth strand encompasses research on maturity models applied to information 
-systems and organizational capabilities \cite{paulk1993}. Established frameworks 
-such as the Capability Maturity Model Integration (CMMI), the Organizational 
-Project Management Maturity Model (OPM3), and the Portfolio, Programme and 
-Project Management Maturity Model (P3M3) provide structured approaches to 
-assessing and improving organizational capabilities across defined levels. 
-More recent research has extended maturity modeling to digital transformation 
-contexts, proposing Digital Maturity Models (DMMs) that assess the degree of 
-digitalization across multiple organizational dimensions \cite{gartner2020}. 
-However, none of these frameworks specifically address information system 
-integration maturity in PMO environments as a distinct construct, leaving a 
-gap that the present thesis seeks to fill.
+    managers reporting directly to the PMO. 
 
-\subsection{Digital Maturity Research in Baltic and Eastern European Enterprises}
-The fifth strand encompasses emerging research on digital transformation and 
-maturity in Baltic and Eastern European enterprises. Studies indicate that 
-Latvian and broader Baltic enterprises generally demonstrate lower levels of 
-digital maturity compared to Nordic counterparts, particularly in the areas 
-of process automation and system integration \cite{eurostat2023}. While some 
-research has examined e-government digitalization and SME digital adoption in 
-Latvia, empirical studies specifically addressing information system integration 
-maturity in PMO environments remain absent from the literature. This represents 
-a significant gap, as the Latvian enterprise context — characterized by a 
-predominance of medium-sized organizations and a rapidly evolving digital 
-landscape — may exhibit distinct integration maturity patterns that differ 
-from those documented in Western European or North American studies. The present 
-thesis directly addresses this gap by providing the first empirical assessment 
-of PMO IS integration maturity in Latvian enterprises.
+\end{itemize} 
 
-\begin{table}[h]
-  \caption{Comparison of related research strands}
-  \label{tab:related-work}
-  \centering
-  {\singlespacing
-  \begin{tabular}{p{0.25\linewidth}p{0.25\linewidth}p{0.22\linewidth}p{0.18\linewidth}}
-    \toprule
-    \textbf{Strand} & \textbf{Focus} & \textbf{Strength} & \textbf{Limitation}\\
-    \midrule
-    Traditional PMO & Process standardization & Strong governance theory & No IS integration focus\\
-    API Integration & Technical connectivity & Automation evidence & No PMO context\\
-    BI \& Governance & Dashboard systems & Governance link & Large enterprises only\\
-    Maturity Models & Capability levels & Structured framework & Not PMO IS specific\\
-    Baltic Digital Maturity & Regional context & Latvia relevance & No PMO IS empirics\\
-    \bottomrule
-  \end{tabular}
-  }
-\end{table}
-\section{Theoretical Framework}
-\label{sec:theory}
+  
 
-This section presents the theoretical lens that grounds the empirical investigation. 
-Based on the review of existing maturity models and IS integration research in 
-Section~\ref{sec:related}, this thesis proposes a four-level Integration Maturity 
-Model (IMM) specifically adapted to PMO information system environments.
+\subsection{Project Management Information System (PMIS)} 
 
-\subsection{Foundations of the Integration Maturity Model}
-The proposed model draws on three theoretical foundations. First, the staged 
-progression concept from the Capability Maturity Model Integration (CMMI) 
-\cite{paulk1993}, which posits that organizations advance through discrete, 
-measurable levels of capability. Second, the enterprise integration patterns 
-framework \cite{hohpe2004}, which classifies integration mechanisms by their 
-degree of automation and architectural sophistication. Third, the data quality 
-dimensions framework \cite{dama2017}, which links integration architecture to 
-data accuracy, completeness, and timeliness outcomes.
+A project management information system (PMIS) is a software-based system or set of tools that helps with planning, doing, tracking, and reporting on projects in a PMO setting. \cite{laudon2015}.  
 
-\subsection{The Four-Level Integration Maturity Model}
-The Integration Maturity Model proposed in this thesis defines four levels of 
-IS integration maturity in PMO environments, as presented in 
-Table~\ref{tab:imm-levels}.
+Some common PMIS tools are Microsoft Project, Jira, SAP, and Power BI. A PMIS can be one big platform or a group of smaller tools that work together, which makes it hard to integrate information systems. 
 
-{\singlespacing
-\begin{table}[h]
-  \caption{Four-Level Integration Maturity Model for PMO Information Systems}
-  \label{tab:imm-levels}
-  \centering
-  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.25\linewidth}p{0.22\linewidth}p{0.20\linewidth}}
-    \toprule
-    \textbf{Level} & \textbf{Name} & \textbf{Integration Mechanism} & 
-    \textbf{Reporting} & \textbf{Governance}\\
-    \midrule
-    1 & Initial & No integration; fully manual data consolidation via spreadsheets & 
-    Fully manual; high error rate & Ad hoc; no standardization\\
-    2 & Developing & File-based integration (CSV/Excel exports); partial automation & 
-    Semi-manual; scheduled exports & Basic standards; inconsistent\\
-    3 & Defined & API-based point-to-point integration; automated data flows & 
-    Mostly automated; near real-time & Defined processes; mostly consistent\\
-    4 & Optimized & Platform-level integration; unified data ecosystem with BI & 
-    Fully automated; real-time dashboards & Fully standardized; continuous improvement\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-}
+\subsection{Information System Integration} 
 
-\textbf{Level 1 --- Initial.} At this level, PMO environments rely entirely on 
-manual data consolidation. Project data is collected from multiple disconnected 
-tools and compiled into reports manually, typically using spreadsheets. There is 
-no systematic data flow between systems, resulting in high risk of errors, 
-inconsistencies, and reporting delays. Governance practices are ad hoc and 
-unstandardized.
+Integrating information systems means connecting two or more software systems so  
 
-\textbf{Level 2 --- Developing.} At Level 2, some degree of semi-automated 
-integration exists through file-based data exchange, such as scheduled CSV or 
-Excel exports between systems. While this reduces some manual effort, significant 
-human intervention is still required to consolidate and validate data. Reporting 
-is semi-automated and governance standards are partially defined but inconsistently 
-applied.
+that data can move between them automatically without any help from people \cite{hohpe2004}. In PMO settings, project tracking tools, financial systems, and reporting  
 
-\textbf{Level 3 --- Defined.} Level 3 organizations have implemented API-based 
-point-to-point integrations between key PMO systems, enabling automated data 
-flows between project tracking, financial, and reporting tools. Reporting is 
-mostly automated and near real-time. Governance processes are clearly defined 
-and consistently followed across most PMO functions.
+platforms usually work together. Integration can be as simple as manually putting together data or as more complex as using Application Programming Interfaces (APIs) or unified platform ecosystems to automatically sync data in real time.  
 
-\textbf{Level 4 --- Optimized.} At the highest level of maturity, PMO environments 
-operate within a unified platform ecosystem where all systems are fully integrated 
-and data flows in real time. Centralized BI dashboards provide complete portfolio 
-visibility, and governance processes are fully standardized with continuous 
-improvement mechanisms in place. This level represents the benchmark for 
-information system integration excellence in PMO environments.
+\subsection{Integration Maturity Model} 
 
-\subsection{Variables and Relationships}
-The model defines the following key variables and relationships that will be 
-tested empirically in Chapter~3:
+A maturity model is a structured framework that shows how a capability 
 
-\begin{itemize}
-    \item \textbf{Independent variable:} Integration Maturity Level (1--4), 
-    operationalized through survey items measuring integration mechanisms, 
-    automation level, and BI centralization.
-    \item \textbf{Dependent variables:} Reporting automation degree, perceived 
-    data accuracy and timeliness, and governance standardization level.
-    \item \textbf{Expected relationships:} Higher integration maturity levels 
-    are expected to be positively associated with all three dependent variables, 
-    consistent with the hypotheses stated in the Introduction.
-\end{itemize}
-\section{Research Motivation and Direction}
-\label{sec:motivation}
+ develops over a set of levels. \cite{paulk1993}.  
 
-\paragraph{Problem significance.}
-The fragmentation of information systems in PMO environments represents a 
-significant operational challenge for Latvian enterprises. When project tracking, 
-financial, and reporting tools operate in isolation, PMO staff are forced to 
-spend substantial time on manual data consolidation, increasing the risk of 
-errors and reducing the timeliness of management reporting. This inefficiency 
-directly affects the quality of strategic decision-making at the portfolio level. 
-The stakeholders most affected include PMO managers, project sponsors, and 
-executive leadership who rely on accurate and timely project data to make 
-investment and resource allocation decisions.
+A maturity model indicates the progression an organization achieves in  
 
-\paragraph{Identified gap.}
-As established in Section~\ref{sec:related}, existing research on IS integration 
-maturity does not specifically address PMO environments, and no empirical study 
-has examined this phenomenon in the Latvian enterprise context. The gap can be 
-stated precisely as follows: \emph{the distribution of IS integration maturity 
-levels across PMO environments in Latvian enterprises, and its relationship with 
-reporting automation, data quality, and governance standardization, has not been 
-empirically measured or documented.} This gap is both testable and measurable 
-through survey-based quantitative research.
+information system integration, evolving from elementary, manual practices to  
 
-\paragraph{Direction and scope.}
-This thesis addresses the identified gap by conducting an empirical survey-based 
-study of IS integration maturity in PMO environments across medium and large 
-Latvian enterprises. The study applies the four-level Integration Maturity Model 
-proposed in Section~\ref{sec:theory} as the primary measurement framework. The 
-scope is deliberately bounded to enterprises with 50 or more employees that 
-maintain a formal PMO structure, as smaller organizations are unlikely to have 
-sufficiently complex IS landscapes to make integration maturity a meaningful 
-concern. The study does not examine individual project outcomes, software 
-implementation processes, or the technical architecture of specific integration 
-solutions — these are explicitly out of scope. This direction directly corresponds 
-to the Aim and Tasks defined in the Introduction.
+comprehensive, automated, platform-level integration. This thesis modifies  the idea 
 
-\paragraph{Success criteria.}
-The study will be considered successful if it achieves the following outcomes: 
-(1) a valid and reliable survey instrument is developed and administered to at 
-least 30 respondents from Latvian enterprises with formal PMO structures; 
-(2) the distribution of integration maturity levels across the sample is 
-described using descriptive statistics; (3) statistically significant 
-relationships between integration maturity and the dependent variables 
-(reporting automation, data quality, governance standardization) are tested 
-using correlation and regression analysis; and (4) practical recommendations 
-for PMO IS integration improvement are formulated based on the empirical findings.
+ of maturity modeling applied to the specific situation of PMO information  systems,  
 
-\section{Chapter Summary}
-\label{sec:summary}
+implying a four-level Integration Maturity Model as the fundamental  theoretical framework. 
 
-This chapter established the theoretical and conceptual foundations of the thesis. 
-Section~\ref{sec:concepts} defined eight key terms — PMO, PMIS, IS integration, 
-integration maturity model, business intelligence, data quality, reporting 
-automation, and medium/large enterprise — providing a consistent conceptual 
-vocabulary for the remainder of the thesis. Section~\ref{sec:related} surveyed 
-five thematic strands of related research, contrasting traditional PMO research, 
-API integration studies, BI-governance research, maturity model frameworks, and 
-Baltic digital maturity research, and identified a concrete empirical gap. 
-Section~\ref{sec:theory} proposed a four-level Integration Maturity Model as 
-the primary theoretical framework, defining the variables and relationships 
+  
+
+\subsection{Business Intelligence and Dashboard Systems} 
+
+Business Intelligence (BI) stands for the tools, methods, and ways of doing things   
+
+used to gather, combine, analyze, and show business data to help making decisions. 
+
+\cite{negash2004} In PMO settings, BI systems usually  show up as centralized dashboards  
+
+that bring together data from many different projects and financial systems into one view.  
+
+In this thesis, the presence or absence of centralized BI systems is used as  
+
+an indicator of governance standardization maturity. 
+
+  
+
+ \subsection{Data Quality} 
+
+Data quality refers to the degree to which data is accurate, complete, consistent, and timely for 
+
+ its intended purpose. \cite{dama2017} 
+
+When it comes to PMO reporting, the level of system integration has a direct influence 
+
+ on the quality of the data: Data that is put together manually by humans is more likely 
+
+ to have errors and require more time, while automated integration lowers the chance of 
+
+ inconsistencies. This thesis assesses data quality via perceived accuracy and timeliness as 
+
+ indicated by PMO representatives. 
+
+  
+
+ 
+
+\subsection{Reporting Automation} 
+
+Reporting automation is the use of software tools and system integrations  
+
+to automatically generate project status reports, dashboards, and portfolio  
+
+summaries without manual data entry \cite{pmi2021}. Automated reporting  
+
+reduces the workload on PMO staff and improves the timeliness and consistency  
+
+of management information. In this thesis, reporting automation refers to  
+
+the degree to which PMO reports are produced automatically from integrated  
+
+systems rather than compiled manually. 
+
+ 
+
+ 
+
+\subsection{Medium and Large Enterprises in the Latvian Context} 
+
+As per the European Commission's classification for company sizes, A medium-sized company 
+
+ is one that has between 50 and 249 employees and A large company employs 250 or more 
+
+ people, \cite{ec2003}. This thesis focuses on medium and large Latvian enterprises due to their 
+
+ higher tendency to have set up formal PMO structures and information that is complex enough 
+
+ system landscapes to make integration maturity a real issue  
+
+\section{Related Work: Themes, Methods, and Evidence} 
+
+\label{sec:related} 
+
+This section surveys existing research on PMO digitalization, information system  
+
+integration, and maturity models. Prior work is organized into five thematic  
+
+strands, which are contrasted to identify the gap that the present thesis addresses. 
+
+ 
+
+ 
+
+\subsection{Traditional PMO Research and Manual Integration Practices} 
+
+Early research on Project Management Offices focused primarily on process  
+
+standardization, governance frameworks, and the role of PMOs in improving  
+
+project delivery outcomes \cite{hobbs2007}. In this body of literature,  
+
+information systems were treated as secondary tools — typically spreadsheets  
+
+and standalone reporting software —rather than integrated platforms. Manual  
+
+data consolidation was the dominant practice, with PMO staff collecting data  
+
+from multiple sources and compiling reports manually. While this approach  
+
+established the theoretical foundations of PMO governance, it did not address  
+
+the challenges of system fragmentation or the consequences of low integration  
+
+maturity on reporting efficiency and data quality. The primary limitation of  
+
+this strand is its failure to account for the growing complexity of modern  
+
+PMO information system landscapes. 
+
+ 
+
+\subsection{API-Based and Platform-Level Integration Research} 
+
+A second line of research looks at the technical aspects of information   
+
+ integration of systems, with a focus on API-based connectivity and platform-level   
+
+ ecosystems \cite{hohpe2004}. Research in this domain illustrates that organizations   
+
+ adopting API-driven integration architectures attains significantly higher levels   
+
+ of reporting automation and data consistency compared to those that depend on manual   
+
+ or file-based data transfer\cite{laudon2015}. Ecosystems for platforms like   
+
+ Native integration features in Microsoft 365, SAP, and Jira cut down on the need for manual  
+
+work. This research strand is primarily focused on technical aspects and does not methodically  
+
+analyze the organizational or governance effects of integration maturity in PMO-specific situations.  Furthermore, implementation costs and the technical expertise required for  
+
+API-based integration present significant barriers for medium-sized enterprises. 
+
+ 
+
+\subsection{Business Intelligence and Governance Standardization} 
+
+A third research strand examines the correlation between Business Intelligence (BI) systems and organizational governance \cite{negash2004}. Studies consistently   
+
+show that enterprises with centralized BI dashboards have higher levels   
+
+ of governance standardization, as real-time data visibility encourages better, consistent  
+
+decision-making and performance monitoring across projects\cite{pmi2021}. This  
+
+strand is particularly relevant to the present thesis, as it provides theoretical  
+
+support for Hypothesis 4 — that the use of centralized BI systems is associated  
+
+with higher governance standardization in PMO processes. The main limitation of  
+
+this research strand is its focus on large enterprises, with limited attention  
+
+to medium-sized organizations or specific regional contexts. 
+
+ 
+
+\subsection{Maturity Model Frameworks in Information Systems Research} 
+
+The fourth strand covers research on maturity models used in information systems  
+
+and organizational capabilities \cite{paulk1993}. Well-known frameworks such as  
+
+CMMI, OPM3, and P3M3 help organizations measure and improve their capabilities  
+
+across defined levels. More recent work has extended these ideas to digital  
+
+transformation, producing Digital Maturity Models that assess how digital an  
+
+organization is across multiple dimensions \cite{gartner2020}. However, none  
+
+of these frameworks specifically address IS integration maturity in PMO  
+
+environments, which is the gap this thesis fills. 
+
+ 
+
+\subsection{Digital Maturity Research in Baltic and Eastern European Enterprises} 
+
+The fifth strand comprises new studies on digital transformation and   
+
+ maturity in enterprises in the Baltic and Eastern Europe. Research demonstrates that   
+
+ companies in Latvia and the rest of the Baltic region tend to have lower levels of   
+
+ digital maturity compared to Nordic peers, especially in the areas of integrating systems 
+
+ and automating processes\cite{eurostat2023}. While some  
+
+research has examined e-government digitalization and SME digital adoption in  
+
+Latvia, empirical studies specifically addressing information system integration  
+
+maturity in PMO environments remain absent from the literature. This represents  
+
+a significant gap, as the Latvian enterprise context — characterized by a  
+
+predominance of medium-sized organizations and a rapidly evolving digital  
+
+landscape — may exhibit distinct integration maturity patterns that differ  
+
+from those documented in Western European or North American studies. The present  
+
+thesis directly addresses this gap by providing the first empirical assessment  
+
+of PMO IS integration maturity in Latvian enterprises. 
+
+\begin{table}[h] 
+
+  \caption{Comparison of related research strands} 
+
+  \label{tab:related-work} 
+
+  \centering 
+
+  {\singlespacing 
+
+  \begin{tabular}{p{0.25\linewidth}p{0.25\linewidth}p{0.22\linewidth}p{0.18\linewidth}} 
+
+    \toprule 
+
+    \textbf{Strand} & \textbf{Focus} & \textbf{Strength} & \textbf{Limitation}\\ 
+
+    \midrule 
+
+    Traditional PMO & Process standardization & Strong governance theory & No IS integration focus\\ 
+
+    API Integration & Technical connectivity & Automation evidence & No PMO context\\ 
+
+    BI \& Governance & Dashboard systems & Governance link & Large enterprises only\\ 
+
+    Maturity Models & Capability levels & Structured framework & Not PMO IS specific\\ 
+
+    Baltic Digital Maturity & Regional context & Latvia relevance & No PMO IS empirics\\ 
+
+    \bottomrule 
+
+  \end{tabular} 
+
+  } 
+
+\end{table} 
+
+\section{Theoretical Framework} 
+
+\label{sec:theory} 
+
+  
+
+This section presents the theoretical lens that grounds the empirical investigation.  
+
+Based on the review of existing maturity models and IS integration research in  
+
+Section~\ref{sec:related}, this thesis proposes a four-level Integration Maturity  
+
+Model (IMM) specifically adapted to PMO information system environments. 
+
+ 
+
+ 
+
+\subsection{Foundations of the Integration Maturity Model} 
+
+The proposed model draws on three theoretical foundations. First, the staged  
+
+progression concept from the Capability Maturity Model Integration (CMMI)  
+
+\cite{paulk1993}, which posits that organizations advance through discrete,  
+
+measurable levels of capability. Second, the enterprise integration patterns  
+
+framework \cite{hohpe2004}, which classifies integration mechanisms by their  
+
+degree of automation and architectural sophistication. Third, the data quality  
+
+dimensions framework \cite{dama2017}, which links integration architecture to  
+
+data accuracy, completeness, and timeliness outcomes. 
+
+ 
+
+\subsection{The Four-Level Integration Maturity Model} 
+
+The Integration Maturity Model proposed in this thesis defines four levels of  
+
+IS integration maturity in PMO environments, as presented in  
+
+Table~\ref{tab:imm-levels}. 
+
+  
+
+{\singlespacing 
+
+\begin{table}[h] 
+
+  \caption{Four-Level Integration Maturity Model for PMO Information Systems} 
+
+  \label{tab:imm-levels} 
+
+  \centering 
+
+  \begin{tabular}{p{0.08\linewidth}p{0.15\linewidth}p{0.25\linewidth}p{0.22\linewidth}p{0.20\linewidth}} 
+
+    \toprule 
+
+    \textbf{Level} & \textbf{Name} & \textbf{Integration Mechanism} &  
+
+    \textbf{Reporting} & \textbf{Governance}\\ 
+
+    \midrule 
+
+    1 & Initial & No integration; fully manual data consolidation via spreadsheets &  
+
+    Fully manual; high error rate & Ad hoc; no standardization\\ 
+
+    2 & Developing & File-based integration (CSV/Excel exports); partial automation &  
+
+Semi-manual scheduled exports & Basic standards; inconsistent\\ 
+
+    3 & Defined & API-based point-to-point integration; automated data flows &  
+
+    Mostly automated; near real-time & Defined processes; mostly consistent\\ 
+
+    4 & Optimized & Platform-level integration; unified data ecosystem with BI &  
+
+    Fully automated; real-time dashboards & fully standardized continuous improvement\\ 
+
+    \bottomrule 
+
+  \end{tabular} 
+
+\end{table} 
+
+} 
+
+\textbf{Level 1 --- Initial.}  
+
+At this level, PMO environments depend on putting together data by manual means. 
+
+ People usually use spreadsheets to put together reports from project data collected from many 
+
+ different tools that aren't connected to each other. There is no organized way for data to move 
+
+ between systems, which makes it very likely that mistakes, inconsistencies, and delays in 
+
+ reporting will happen. There are no set rules for governance practices 
+
+  
+
+\textbf{Level 2 --- Developing.}  
+
+At Level 2, some level of semi-automated, there is integration through file-based 
+
+ data exchange, like when systems transmit CSV or Excel files to each other on a set schedule. 
+
+ This helps to save some time, but people still need to do a lot of work to combine and check the 
+
+ data. Reporting is partially automated, and governance standards are only partially defined and 
+
+ not consistently followed. 
+
+ 
+
+ 
+
+ 
+
+\textbf{Level 3 --- Defined.} Level 3 organizations have implemented API-based  
+
+point-to-point integrations between key PMO systems, enabling automated data  
+
+flows between project tracking, financial, and reporting tools. This enables data flow 
+
+ automatically between tools for tracking projects, finances, and  
+
+reports. Reporting is mostly done by computers and is almost real-time. Most PMO functions 
+
+ have clear rules for governance that they always follow 
+
+  
+
+\textbf{Level 4 --- Optimized.} At the highest level of maturity, PMO environments  
+
+operate within a unified platform ecosystem where all systems are fully integrated  
+
+and data flows in real time. Centralized BI dashboards give you a full view of your portfolio 
+
+, and all governance processes are fully standardized with ways to keep getting better.  
+
+This level is the standard for how well information systems should work together in PMO 
+
+ settings. 
+
+ 
+
+\subsection{Variables and Relationships} 
+
+The model defines the following key variables and relationships that will be  
+
+tested empirically in Chapter~3: 
+
+  
+
+\begin{itemize} 
+
+    \item \textbf{Independent variable:} Integration Maturity Level (1--4),  
+
+    operationalized through survey items measuring integration mechanisms,  
+
+    automation level, and BI centralization. 
+
+    \item \textbf{Dependent variables:} Reporting automation degree, perceived  
+
+    data accuracy and timeliness, and governance standardization level. 
+
+    \item \textbf{Expected relationships:} Higher integration maturity levels  
+
+    are expected to be positively associated with all three dependent variables,  
+
+    consistent with the hypotheses stated in the Introduction. 
+
+\end{itemize} 
+
+\section{Research Motivation and Direction} 
+
+\label{sec:motivation} 
+
+ 
+
+\paragraph{Problem significance.} 
+
+For Latvian enterprises, the fact that information systems get mixed up in PMO environments is 
+
+a major operational problem. When project tracking, financial, and reporting tools don't work 
+
+together, the PMO staff has to spend a lot of time manually putting together data, which raises 
+
+the chance of mistakes and makes management reports less timely. This lack of efficiency has a 
+
+ direct impact on how well strategic decisions are made at the portfolio level.   
+
+The people who are most affected are PMO managers, project sponsors, and executive leaders 
+
+ who need accurate and up-to-date project data to decide how to spend money and resources. 
+
+ 
+
+\paragraph{Identified gap.} 
+
+As established in Section~\ref{sec:related}, current research on IS integration maturity fails to 
+
+ specifically focus on PMO environments, and there is a lack of empirical studies investigating 
+
+ this phenomenon within the Latvian enterprise context. The gap can be stated  
+
+precisely as follows: \emph{the distribution of IS integration maturity levels across  
+
+PMO environments in Latvian enterprises, and its relationship with  
+
+reporting automation, data quality, and governance standardization, has not been  
+
+empirically measured or documented.} This gap is both testable and measurable  
+
+through survey-based quantitative research. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+\paragraph{Direction and scope.} 
+
+This thesis addresses the gap by conducting an empirical survey-based study of IS 
+
+integration maturity in PMO environments in medium and large Latvian businesses.  
+
+The research utilizes the four-level Integration Maturity Model established in Section 
+
+ ~\ref{sec:theory} as the primary measurement framework.  
+
+The scope is intentionally limited to enterprises with 50 or more employees that uphold a  
+
+formal Project Management Office (PMO) structure, as smaller organizations are unlikely to 
+
+ possess sufficiently intricate information systems landscapes to render integration maturity a 
+
+ significant issue. The study explicitly excludes the analysis of individual project outcomes, 
+
+ software implementation processes, or the technical architecture of specific integration 
+
+ solutions. This direction is directly related to the goals and tasks set out in the introduction. 
+
+ 
+
+\paragraph{Success criteria.} 
+
+The study will be considered successful if it achieves the following outcomes:  
+
+(1) a valid and reliable survey instrument is developed and administered to at  
+
+least 30 respondents from Latvian enterprises with formal PMO structures;  
+
+(2) the distribution of integration maturity levels across the sample is  
+
+described using descriptive statistics; (3) statistically significant  
+
+relationships between integration maturity and the dependent variables  
+
+(reporting automation, data quality, governance standardization) are tested  
+
+using correlation and regression analysis; and (4) practical recommendations  
+
+for PMO IS integration improvement are formulated based on the empirical findings. 
+
+\section{Chapter Summary} 
+
+\label{sec:summary} 
+
+  
+
+This chapter established the theoretical and conceptual foundations of the thesis.  
+
+Section~\ref{sec:concepts} defined eight key terms — PMO, PMIS, IS integration,  
+
+integration maturity model, business intelligence, data quality, reporting  
+
+automation, and medium/large enterprise — providing a consistent conceptual  
+
+vocabulary for the remainder of the thesis. Section~\ref{sec:related} surveyed  
+
+five thematic strands of related research, contrasting traditional PMO research,  
+
+API integration studies, BI-governance research, maturity model frameworks, and  
+
+Baltic digital maturity research, and identified a concrete empirical gap.  
+
+Section~\ref{sec:theory} proposed a four-level Integration Maturity Model as  
+
+the primary theoretical framework, defining the variables and relationships  
+
 to be tested empirically. Section~\ref{sec:motivation} articulated the problem 
-significance, the measurable research gap, the scope of the study, and the 
-success criteria.
 
-\noindent\textbf{Conclusions for Chapter~1.}
-The literature review confirms that while substantial research exists on PMO 
-governance, IS integration architectures, and digital maturity models, no 
-empirical study has specifically examined IS integration maturity in PMO 
-environments within Latvia. The proposed four-level Integration Maturity Model 
-provides a theoretically grounded and operationalizable framework for addressing 
-this gap. These foundations motivate the research methodology presented in 
-Chapter~2 and the empirical study conducted in Chapter~3.
+significance, the measurable research gap, the scope of the study, and the  
+
+success criteria. 
+
+  
+
+\noindent\textbf{Conclusions for Chapter~1.} 
+
+The literature review confirms that while substantial research exists on PMO  
+
+governance, IS integration architectures, and digital maturity models, no  
+
+empirical study has specifically examined IS integration maturity in PMO  
+
+environments within Latvia. The proposed four-level Integration Maturity Model  
+
+provides a theoretically grounded and operationalizable framework for addressing  
+
+this gap. These foundations motivate the research methodology presented in  
+
+Chapter~2 and the empirical study conducted in Chapter~3. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+  
+
+ 
