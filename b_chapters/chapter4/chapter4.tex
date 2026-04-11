@@ -1,67 +1,230 @@
-\chapter{Discussion and Development (Example Chapter~4)}
+\chapter{Discussion and Recommendations}
 \label{chap:discussion}
 
-% --- IMPORTANT NOTE FOR STUDENTS ---
-% This chapter is optional and highly flexible.
-% Some theses combine discussion with results (Chapter~3).
-% Others use it to present proposals, improvements, or an evaluation.
-% Always adapt the content/structure to your project and check with your supervisor.
+This chapter interprets the empirical findings presented in Chapter~3 
+in the context of the theoretical framework and existing literature 
+reviewed in Chapter~1. It discusses the significance of the results, 
+compares them with prior research, formulates practical recommendations 
+for improving information system integration maturity in PMO environments 
+in Latvian enterprises, and reflects on unexpected findings and 
+theoretical implications.
 
-This chapter may serve several possible purposes depending on the nature of your work:  
-(1) discuss your empirical findings in more depth,  
-(2) compare results against theory or prior work,  
-(3) propose improvements, models, or design solutions, or  
-(4) evaluate feasibility or efficiency.  
-If your project is small-scale or self-contained, you may skip this chapter and move directly to the Conclusions.
+\section{Discussion of Findings}
+\label{sec:discussion}
 
-\section{Extended Discussion (Optional Example Section)}
-\label{sec:discussion-extended}
-Here you may reflect more deeply on your results than in Chapter~\ref{chap:empirical}.  
-Possible angles include:
+\subsection{Integration Maturity Distribution in Latvian PMOs}
+The survey results revealed that 70\% of the sampled PMO environments 
+operate at intermediate integration maturity levels — either Level 2 
+(Developing) or Level 3 (Defined). This finding is consistent with 
+Hypothesis 1 and aligns with broader research on digital maturity 
+in Baltic enterprises, which suggests that Latvian organizations 
+generally lag behind Nordic counterparts in terms of digital 
+integration and automation \cite{eurostat2023}.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Comparing results with other studies or benchmarks.  
-  \item Highlighting unexpected patterns or anomalies.  
-  \item Theoretical implications: how your findings support or contradict existing models.  
-\end{itemize}
+The dominance of Levels 2 and 3 suggests that most Latvian enterprises 
+have moved beyond completely manual data consolidation but have not yet 
+achieved full platform-level integration. This is a critical observation 
+because it indicates that the majority of organizations are in a 
+transitional phase — they have recognized the need for integration 
+but have not yet made the full investment required to reach Level 4. 
+This finding is also consistent with the expert interview, in which 
+Expert 1 noted that even organizations with relatively high integration 
+maturity still face challenges such as data latency and legacy system 
+resistance.
 
-\paragraph{Tip.} If your work is primarily an implementation, you may instead use this section to evaluate design trade-offs, architectural choices, or lessons learned.
+\subsection{Integration Maturity and Reporting Automation}
+The statistically significant positive correlation between integration 
+maturity and reporting automation (r=0.405, p=0.010) confirms that 
+organizations with more advanced IS integration generate reports more 
+automatically. This finding supports Hypothesis 2 and is consistent 
+with research by Hohpe and Woolf \cite{hohpe2004}, who demonstrated 
+that API-based integration architectures significantly reduce the need 
+for manual data handling.
 
-\section{Proposals / Improvements (Optional Example Section)}
-\label{sec:proposals}
-In many IT theses, the contribution is not only empirical but also practical.  
-Here you can suggest:
+The practical implication of this finding is clear: organizations that 
+invest in higher levels of IS integration can expect a meaningful 
+reduction in the time and effort spent on manual reporting. Expert 1 
+confirmed this, describing a 70/30 split in favour of automated 
+reporting in their organization, compared to what is likely a much 
+lower automation rate in Level 1 and Level 2 organizations.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Proposed system modifications or design improvements.  
-  \item Prototype features, extensions, or optimizations.  
-  \item Conceptual models or frameworks based on your findings.  
-\end{itemize}
+\subsection{Integration Maturity and Data Quality}
+The positive correlation between integration maturity and data quality 
+(r=0.321, p=0.043), while the weakest of the three, remains 
+statistically significant. This confirms Hypothesis 3 and supports 
+the theoretical argument made in Chapter~1 that manual data 
+consolidation introduces errors and delays that undermine data quality 
+\cite{dama2017}.
 
-Illustrate with diagrams, mockups, or tables if useful. Remember: these are suggestions, not required elements.
+The relatively weaker correlation for data quality compared to 
+reporting automation and governance standardization may reflect the 
+fact that data quality is influenced by many factors beyond IS 
+integration alone — including user behaviour, data entry discipline, 
+and organizational culture. Expert 1 highlighted this point, noting 
+that even with high integration maturity, data quality depends heavily 
+on how consistently project managers update their data. This suggests 
+that technical integration alone is not sufficient — it must be 
+accompanied by organizational practices that support data hygiene.
 
-\section{Evaluation of Feasibility / Efficiency (Optional Example Section)}
-\label{sec:evaluation}
-Sometimes it makes sense to estimate how well your proposal would work in practice.  
-Examples:
+\subsection{Integration Maturity and Governance Standardization}
+The strong positive correlation between integration maturity and 
+governance standardization (r=0.403, p=0.010) confirms Hypothesis 4 
+and provides empirical support for the theoretical link between 
+centralized BI systems and governance quality established in 
+Chapter~1 \cite{negash2004}. Organizations with higher integration 
+maturity demonstrated significantly stronger governance standardization 
+practices.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Performance evaluation (e.g., runtime, memory use, scalability).  
-  \item Cost/benefit trade-offs (time, resources, usability).  
-  \item Risks and limitations of implementation.  
-\end{itemize}
+This finding is strongly supported by the expert interview. Expert 1 
+described how the introduction of a centralized Power BI Command 
+Center transformed governance in their organization by enforcing 
+universal KPI definitions, eliminating subjective reporting, and 
+making project performance transparently visible to all executives 
+simultaneously. This qualitative evidence provides important context 
+for understanding the mechanism through which higher integration 
+maturity leads to better governance standardization.
 
-This section can be skipped if it does not apply to your project.
+\section{Comparison with Existing Literature}
+\label{sec:literature-comparison}
 
-\section{Sub-Conclusions (for Chapter~4)}
-\label{sec:subconcl4}
-Close with a short synthesis that ties together the discussion and proposals.  
-Example points:
+The findings of this study are largely consistent with existing 
+research on IS integration and PMO maturity. The dominance of 
+intermediate maturity levels in the sample aligns with research 
+by Hobbs and Aubry \cite{hobbs2007}, who found that most PMOs 
+struggle to advance beyond basic standardization practices. The 
+positive relationships between integration maturity and the three 
+dependent variables are consistent with the theoretical predictions 
+of the Integration Maturity Model proposed in Chapter~1.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item What your deeper reflection adds beyond the raw results.  
-  \item Which improvements or models are most promising.  
-  \item How these insights prepare the way for the \textbf{Conclusions chapter}.  
-\end{itemize}
+However, this study makes a unique contribution by providing 
+empirical evidence specifically from the Latvian enterprise context. 
+As noted in Chapter~1, no prior study had specifically examined IS 
+integration maturity in PMO environments within Latvia. The findings 
+suggest that Latvian enterprises follow a similar pattern to those 
+documented in broader European research, but with a tendency toward 
+lower overall maturity levels, which is consistent with the digital 
+maturity gap between Baltic and Nordic countries identified by 
+Eurostat \cite{eurostat2023}.
 
-\paragraph{Reminder.} The “big picture” statements — confirmation of tasks, validation of the hypothesis, and achievement of the aim — belong in the \textbf{Conclusions chapter}, not here.
+\section{Unexpected Findings and Theoretical Implications}
+\label{sec:implications}
+
+\subsection{Unexpected Findings}
+One noteworthy finding was that data quality showed the weakest 
+correlation with integration maturity (r=0.321) compared to 
+reporting automation (r=0.405) and governance standardization 
+(r=0.403). This was somewhat unexpected, as the theoretical 
+framework suggested that automated integration would have a 
+strong direct impact on data accuracy by eliminating manual 
+entry errors. However, as Expert 1 observed, data quality is 
+also strongly influenced by human behaviour and organizational 
+discipline — factors that are independent of technical integration 
+level. This suggests that the relationship between IS integration 
+and data quality is more complex than initially theorized and 
+warrants further investigation in future research.
+
+Another interesting observation is that 15\% of organizations 
+operated at Level 4 — the highest maturity level. This is higher 
+than might be expected given the generally lower digital maturity 
+of Baltic enterprises compared to Nordic counterparts. This may 
+reflect a degree of self-selection bias in the sample, as 
+organizations with more advanced PMO structures may have been 
+more willing to participate in a PMO-focused survey.
+
+\subsection{Theoretical Implications}
+This study makes several contributions to the theoretical 
+understanding of IS integration maturity in PMO environments. 
+First, it provides empirical validation of the four-level 
+Integration Maturity Model proposed in Chapter~1, demonstrating 
+that the model's levels correspond to meaningful differences in 
+reporting automation, data quality, and governance standardization. 
+Second, it extends the existing literature on digital maturity 
+models by applying the maturity model concept specifically to 
+PMO IS integration — a context that had not previously been 
+examined empirically. Third, it provides the first empirical 
+evidence of IS integration maturity patterns in Latvian enterprises, 
+contributing to the growing body of research on digital 
+transformation in Baltic and Eastern European contexts.
+
+\section{Practical Recommendations}
+\label{sec:recommendations}
+
+Based on the empirical findings and the expert interview insights, 
+the following practical recommendations are proposed for medium and 
+large Latvian enterprises seeking to improve their PMO IS integration 
+maturity.
+
+\subsection{Recommendation 1 --- Prioritize API-Based Integration}
+Organizations currently at Level 1 or Level 2 should prioritize 
+the implementation of API-based connections between their key PMO 
+systems — particularly between project tracking tools, financial 
+systems, and reporting platforms. Even basic API integration can 
+significantly reduce manual data consolidation and improve reporting 
+automation, as evidenced by the strong correlation between maturity 
+level and reporting automation found in this study.
+
+\subsection{Recommendation 2 --- Invest in Centralized BI Dashboards}
+The strongest practical step organizations can take to improve 
+governance standardization is to implement a centralized BI or 
+dashboard solution. Tools such as Power BI, Tableau, or Smartsheet 
+can aggregate data from multiple systems into a single view, 
+enforcing consistent KPI definitions and making project performance 
+transparent across the organization. As Expert 1 noted, this single 
+change can be transformative for governance quality.
+
+\subsection{Recommendation 3 --- Consider Low-Code Integration Platforms}
+For medium-sized Latvian enterprises that cannot afford large-scale 
+enterprise integration solutions, low-code and modular platforms 
+such as Monday.com, ClickUp, or Zapier offer a cost-effective path 
+toward higher integration maturity. These tools allow organizations 
+to connect their existing systems without significant technical 
+expertise or large financial investment.
+
+\subsection{Recommendation 4 --- Address Local System Interoperability}
+Many Latvian enterprises use local accounting and ERP software that 
+is not natively compatible with global PM tools. Organizations should 
+prioritize building or procuring standardized connectors between 
+these local systems and their PMO tools to eliminate the manual 
+data exports that currently bridge this gap.
+
+\subsection{Recommendation 5 --- Invest in Data Literacy}
+Technical integration alone is not sufficient to improve data quality. 
+Organizations must also invest in training project managers and PMO 
+staff to understand the importance of data hygiene and to use 
+integrated systems effectively. As Expert 1 observed, the 
+introduction of a Data Health Score system helped maintain data 
+accuracy even in a highly integrated environment.
+
+\section{Limitations of the Study}
+\label{sec:study-limitations}
+
+While the findings of this study are meaningful and statistically 
+significant, several limitations should be considered when 
+interpreting the results. The sample consisted of 40 respondents, 
+which is sufficient for the planned analyses but limits the 
+statistical power of more advanced models. The reliance on 
+self-reported data means that respondents may have overestimated 
+their organization's integration maturity. The cross-sectional 
+design captures a snapshot in time and cannot establish causal 
+relationships. Finally, the sample is dominated by IT sector 
+organizations, which may limit the generalizability of findings 
+to other industries. These limitations are discussed in more 
+detail in Chapter~2.
+
+\section{Chapter Summary}
+\label{sec:chap4summary}
+
+This chapter discussed the empirical findings of the study in the 
+context of the theoretical framework and existing literature. All 
+four hypotheses were confirmed by the data, with statistically 
+significant positive correlations found between IS integration 
+maturity and reporting automation, data quality, and governance 
+standardization. The findings are consistent with broader research 
+on PMO maturity and digital transformation in Baltic enterprises. 
+An unexpected finding was the relatively weak correlation between 
+integration maturity and data quality, which suggests that human 
+behaviour and organizational culture play an important role alongside 
+technical integration. Five practical recommendations were formulated 
+to help Latvian enterprises improve their PMO IS integration maturity. 
+These findings and recommendations form the basis for the conclusions 
+presented in the following chapter.
