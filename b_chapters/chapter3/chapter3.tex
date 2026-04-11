@@ -1,68 +1,257 @@
-\chapter{Empirical Study / Practical Research (Example Chapter~3)}
+\chapter{Empirical Study}
 \label{chap:empirical}
 
-% --- IMPORTANT NOTE FOR STUDENTS ---
-% This is only a suggested structure. 
-% You may adjust, merge, expand, or shorten sections depending on your topic,
-% as long as the choices are approved by your supervisor.
-% Some theses have a large empirical part, others a very small one. 
-% Adapt to your own case.
+This chapter presents the findings of the empirical part of the study. 
+It covers the survey results collected from 40 representatives of medium 
+and large Latvian enterprises with formal PMO structures, along with 
+findings from one structured expert interview. The chapter is organized 
+into five sections: sample characteristics, descriptive statistics, 
+hypothesis testing, expert interview findings, and a chapter summary.
 
-This chapter usually presents the applied or empirical part of the thesis: an experiment, prototype, survey, simulation, or case study.  
-However, the exact scope depends on your project. In some theses, Chapters~2 and~3 are merged into one; in others, this chapter may be split into two separate ones (e.g., “Implementation” and “Evaluation”).
+\section{Sample Characteristics}
+\label{sec:sample}
 
-\section{Design of the Study (Example Section)}
-\label{sec:design}
-Explain how your empirical/practical work was organized.  
-Typical points to include (adapt as needed):
+A total of 40 valid survey responses were collected, which meets the 
+target of 30--50 responses set out in the research methodology. The 
+respondents represented organizations from various industries and sizes, 
+providing a diverse and representative sample for the analysis.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item \textbf{Objectives.} What you wanted to achieve or test.  
-  \item \textbf{Setup.} Hardware, software, datasets, or infrastructure used.  
-  \item \textbf{Participants or subjects (if any).} For surveys, experiments, or usability tests.  
-  \item \textbf{Procedures.} How the study/experiment was carried out, in enough detail to be reproducible.  
-\end{itemize}
+\subsection{Organization Size}
+More than half of the respondents came from medium-sized enterprises. 
+Specifically, 52.5\% (n=21) reported having 50--249 employees, 35\% 
+(n=14) had 250--999 employees, and 12.5\% (n=5) represented large 
+organizations with 1000 or more employees. This distribution reflects 
+the reality of the Latvian business landscape, which is dominated by 
+medium-sized companies.
 
-\paragraph{Note.} If your work is implementation-heavy, this section can describe the system architecture, algorithms, or workflows you built. If it is more research-focused, describe the methodology and design choices.
+\subsection{Industry Distribution}
+The sample covered seven different industry sectors. The largest group 
+was Information Technology at 37.5\% (n=15), which is not surprising 
+given that IT companies tend to have more formal PMO structures. Finance 
+and Banking, Retail and Commerce, and Telecommunications each accounted 
+for 12.5\% (n=5). Public Sector and Other industries each represented 
+10\% (n=4), while Manufacturing made up 5\% (n=2).
 
-\section{Results of the Study (Example Section)}
-\label{sec:results}
-Present the main outcomes clearly and systematically.  
-Examples:
+\subsection{PMO Maturity and Scope}
+Respondents represented organizations with varying levels of PMO 
+establishment and project portfolio sizes. This diversity strengthens 
+the validity of the findings by ensuring that the results are not 
+skewed toward any single type of organization.
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Tables or charts with performance benchmarks, error rates, or runtime.  
-  \item Screenshots or diagrams of a prototype or interface.  
-  \item Summaries of survey/interview data.  
-\end{itemize}
+\section{Descriptive Statistics}
+\label{sec:descriptive}
 
-% --- Example figure (replace or remove) ---
-\begin{figure}[h]
+\subsection{Integration Maturity Level Distribution}
+One of the central questions of this study was to determine at which 
+integration maturity level most Latvian PMO environments currently 
+operate. The results are presented in Table~\ref{tab:imm-distribution}.
+
+{\singlespacing
+\begin{table}[h]
+  \caption{Distribution of IS Integration Maturity Levels}
+  \label{tab:imm-distribution}
   \centering
-  \includegraphics[width=0.6\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-  \figsource{Replace with your own chart or prototype screenshot.}
-  \caption{Example chart of study results (dummy figure).}
-  \label{fig:study-results}
-\end{figure}
+  \begin{tabular}{p{0.08\linewidth}p{0.20\linewidth}p{0.15\linewidth}p{0.15\linewidth}}
+    \toprule
+    \textbf{Level} & \textbf{Name} & \textbf{Frequency} & \textbf{Percentage}\\
+    \midrule
+    1 & Initial & 6 & 15.0\%\\
+    2 & Developing & 13 & 32.5\%\\
+    3 & Defined & 15 & 37.5\%\\
+    4 & Optimized & 6 & 15.0\%\\
+    \midrule
+    & \textbf{Total} & \textbf{40} & \textbf{100\%}\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+}
 
-\paragraph{Tip.} Do not over-interpret here — keep deep discussion for Chapter~\ref{chap:discussion}.  
-The focus here is on presenting what you observed.
+The results clearly show that the majority of PMO environments (70\%, 
+n=28) operate at intermediate maturity levels — either Level 2 
+(Developing) or Level 3 (Defined). Only 15\% (n=6) have reached the 
+highest level of integration maturity, and another 15\% (n=6) are still 
+at the most basic level. This pattern suggests that while many Latvian 
+enterprises have moved beyond completely manual integration, full 
+platform-level integration remains rare.
 
-\section{Evaluation and Interpretation (Optional)}
-\label{sec:evaluation}
-In some topics it is useful to add a subsection where you briefly evaluate your results against expectations or benchmarks.  
-Examples: compare against a baseline algorithm, test statistical significance, or highlight unexpected patterns.  
-If this does not fit your project, you can skip or merge it into the next chapter.
+\subsection{Descriptive Statistics for Key Constructs}
+Table~\ref{tab:descriptive} shows the mean scores and standard 
+deviations for the three dependent variables — reporting automation, 
+data quality, and governance standardization — measured using 
+five-point Likert scales.
 
-\section{Sub-Conclusions (for Chapter~3)}
-\label{sec:subconcl3}
-End with a short summary (2–3 paragraphs).  
-Example points:
+{\singlespacing
+\begin{table}[h]
+  \caption{Descriptive Statistics for Key Constructs}
+  \label{tab:descriptive}
+  \centering
+  \begin{tabular}{p{0.35\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}p{0.10\linewidth}}
+    \toprule
+    \textbf{Construct} & \textbf{N} & \textbf{Mean} & \textbf{Std Dev} 
+    & \textbf{Min} & \textbf{Max}\\
+    \midrule
+    Reporting Automation & 40 & 3.38 & 0.85 & 1.00 & 5.00\\
+    Data Quality & 40 & 3.32 & 0.73 & 2.00 & 5.00\\
+    Governance Standardization & 40 & 3.64 & 0.71 & 1.00 & 5.00\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+}
 
-\begin{itemize}[leftmargin=1.2cm]
-  \item Key empirical findings (what was achieved, measured, or demonstrated).  
-  \item Relation to the aim and hypothesis from the Introduction.  
-  \item How these findings prepare for the next step — either a discussion chapter (Chapter~\ref{chap:discussion}) or the final conclusions (Chapter~\ref{chap:conclusions}).  
-\end{itemize}
+All three constructs show moderate mean scores, which suggests that 
+the sampled organizations have achieved a moderate but not yet high 
+level of performance in these areas. Governance standardization 
+recorded the highest mean (M=3.64), while data quality had the lowest 
+(M=3.32). The standard deviations indicate a reasonable spread of 
+responses, reflecting genuine variation in IS integration practices 
+across the sample.
 
-\paragraph{Reminder.} The conclusions here should be short and local to this chapter. The overall “big picture” conclusions must still be saved for the dedicated \textbf{Conclusions chapter}.
+\section{Hypothesis Testing}
+\label{sec:hypotheses}
+
+Before conducting correlation analysis, the Shapiro-Wilk normality 
+test was applied to all variables. The results indicated that the 
+data did not follow a normal distribution, which led to the use of 
+Spearman rank correlation — a non-parametric method suitable for 
+ordinal and non-normally distributed data \cite{field2018}. 
+Statistical significance was assessed at the p $<$ 0.05 level.
+
+\subsection{Hypothesis 1}
+\textbf{H1: The majority of PMOs in medium and large Latvian 
+enterprises operate at intermediate integration maturity levels 
+(Levels 2 or 3) rather than at the most advanced level.}
+
+As shown in Table~\ref{tab:imm-distribution}, 70\% of respondents 
+(n=28) reported operating at Level 2 or Level 3, while only 15\% 
+(n=6) had reached Level 4. This clearly confirms that most Latvian 
+PMO environments are at intermediate rather than advanced integration 
+maturity levels. \textbf{Hypothesis 1 is supported.}
+
+\subsection{Hypothesis 2}
+\textbf{H2: PMOs that use API or platform-based integration report 
+higher levels of reporting automation compared to those that rely 
+on manual data handling.}
+
+Spearman correlation analysis showed a statistically significant 
+positive relationship between integration maturity level and 
+reporting automation (r=0.405, p=0.010). This means that 
+organizations with higher IS integration maturity consistently 
+reported higher levels of automated reporting. 
+\textbf{Hypothesis 2 is supported.}
+
+\subsection{Hypothesis 3}
+\textbf{H3: Higher integration maturity is associated with better 
+data accuracy and faster access to project information.}
+
+A statistically significant positive correlation was found between 
+integration maturity level and data quality (r=0.321, p=0.043). 
+Although this is the weakest of the three correlations, it remains 
+statistically significant and confirms that better integrated systems 
+are associated with higher perceived data accuracy and timeliness. 
+\textbf{Hypothesis 3 is supported.}
+
+\subsection{Hypothesis 4}
+\textbf{H4: PMOs that use centralized BI or dashboard tools tend 
+to have more standardized governance practices.}
+
+The correlation analysis revealed a statistically significant 
+positive relationship between integration maturity level and 
+governance standardization (r=0.403, p=0.010). Organizations 
+with higher integration maturity demonstrated notably stronger 
+governance standardization practices. 
+\textbf{Hypothesis 4 is supported.}
+
+{\singlespacing
+\begin{table}[h]
+  \caption{Summary of Hypothesis Testing Results}
+  \label{tab:hypothesis-results}
+  \centering
+  \begin{tabular}{p{0.05\linewidth}p{0.38\linewidth}p{0.10\linewidth}
+  p{0.10\linewidth}p{0.15\linewidth}}
+    \toprule
+    \textbf{H} & \textbf{Hypothesis} & \textbf{r} & \textbf{p} 
+    & \textbf{Result}\\
+    \midrule
+    H1 & Most PMOs at Levels 2--3 & -- & -- & Supported\\
+    H2 & Maturity $\to$ Reporting Automation & 0.405 & 0.010 & Supported\\
+    H3 & Maturity $\to$ Data Quality & 0.321 & 0.043 & Supported\\
+    H4 & Maturity $\to$ Governance & 0.403 & 0.010 & Supported\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+}
+
+\section{Expert Interview Findings}
+\label{sec:interviews}
+
+One structured expert interview was conducted to add qualitative 
+depth to the survey findings. The participant is a professional 
+with experience in PMO environments. In line with the ethical 
+principles outlined in Chapter~2, the participant is referred 
+to anonymously as Expert 1.
+
+\subsection{Expert 1 — Project Management Professional}
+
+Expert 1 is an experienced project management professional working 
+in a PMO environment. Their organization operates what they described 
+as a hybrid-integrated IS ecosystem, using tools such as ServiceNow 
+or Planview for strategic portfolio management, Jira for agile 
+execution, and Microsoft Project Online for waterfall-style schedules. 
+These systems are connected through APIs and middleware solutions, 
+placing the organization at a high integration maturity level 
+(Level 3--4 of the IMM).
+
+Even at this high level of integration, Expert 1 identified three 
+recurring challenges. First, data latency — while systems are 
+connected, brief delays between execution tools and the portfolio 
+layer can result in stakeholders viewing slightly outdated reports. 
+Second, semantic misalignment — different departments define concepts 
+like progress differently, which requires ongoing reconciliation 
+between technical and financial systems. Third, legacy resistance — 
+older ERP systems used by Finance are difficult to connect with 
+modern cloud-based tools, sometimes requiring manual data exports 
+as a workaround.
+
+Regarding reporting, Expert 1 described a 70/30 split in favour of 
+automation. Standard KPIs, budget consumption, and resource 
+utilization are pulled automatically into Power BI and Tableau 
+dashboards, while the remaining 30\% — primarily executive summaries 
+and qualitative narratives — still requires human input.
+
+On data quality, Expert 1 rated satisfaction as 4 out of 5. 
+Timeliness had improved significantly due to automated syncing, 
+but accuracy remains dependent on how consistently project managers 
+update their data. To address this, the organization introduced a 
+Data Health Score system to monitor data hygiene across projects.
+
+Expert 1 confirmed that a centralized Power BI Command Center had 
+been a major step forward for governance standardization. It enforced 
+universal KPI definitions across all projects, eliminated subjective 
+reporting, and made project performance visible to all executives 
+at the same time.
+
+For recommendations, Expert 1 suggested that Latvian enterprises 
+should consider modular, low-code platforms such as Monday.com or 
+ClickUp, which offer strong integration capabilities at a lower cost 
+than enterprise-level tools. Expert 1 also highlighted the need for 
+standardized connectors between local Latvian accounting software 
+and global PM tools, and stressed the importance of data literacy 
+training for Latvian project leaders.
+
+\section{Chapter Summary}
+\label{sec:chap3summary}
+
+This chapter presented the empirical findings of the study. Based 
+on 40 valid survey responses from medium and large Latvian 
+enterprises, the results showed that 70\% of PMO environments 
+operate at intermediate integration maturity levels (Levels 2 and 3), 
+which confirms Hypothesis 1. Statistically significant positive 
+correlations were found between integration maturity and all three 
+dependent variables: reporting automation (r=0.405, p=0.010), 
+data quality (r=0.321, p=0.043), and governance standardization 
+(r=0.403, p=0.010), confirming Hypotheses 2, 3, and 4. The expert 
+interview with Expert 1 provided rich qualitative support for 
+these findings, particularly highlighting the value of centralized 
+BI systems for governance standardization and the ongoing challenge 
+of legacy system integration. The overall findings are discussed 
+and interpreted in Chapter~4.
