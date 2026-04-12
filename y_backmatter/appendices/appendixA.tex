@@ -1,242 +1,204 @@
-\chapter{LaTeX Hints}
-\label{chap:latexhints}
+\chapter{Survey Questionnaire}
+\label{chap:appendixA}
 
+This appendix presents the complete survey instrument used to collect empirical
+data for this study. The survey was distributed electronically via Google Forms
+to representatives of medium and large Latvian enterprises with formal Project
+Management Office (PMO) structures. Participation was voluntary and all
+responses were collected anonymously.
 
-\newenvironment{twocoldemo}[1][]{%
-  \par\noindent
-  \begin{minipage}[t]{.48\linewidth}\raggedright
-  \textbf{Code}\par\smallskip
-}{%
-  \end{minipage}\hfill
-  \begin{minipage}[t]{.48\linewidth}\raggedright
-  \textbf{Output}\par\smallskip
-  \end{minipage}\par
-}
+\bigskip
+\noindent\textbf{Survey title:} Assessment of Information System Integration
+Maturity in Project Management Offices
 
+\noindent\textbf{Estimated completion time:} 10--15 minutes
 
+\noindent\textbf{Target respondents:} PMO managers, project managers, IT
+managers, or digital transformation leads at organizations with 50 or more
+employees and a formal PMO structure.
 
-This appendix shows small, copy-pasteable examples that compile with this thesis class out of the box. It avoids any template-specific commands from other classes.
+\bigskip
 
-\section{Paragraphs and inline emphasis}
-Write one sentence per source line (helps with version control). A blank line starts a new paragraph.
+% ── PART A ──────────────────────────────────────────────────────────────────
+\section*{Part A --- Organizational Profile}
 
-You can write \emph{emphasized (italics)} and \textbf{bold} text. Use \verb|\url{...}| for clickable links, e.g.\ \url{https://ctan.org}.
+\noindent\textbf{A1.} How many employees does your organization currently have?
 
-\section{Math and equations}
-Inline math: $f(x)=x^2+1$. Numbered display equations use \texttt{amsmath}:
-\begin{align}
-  \label{eq:sample}
-  \int_0^1 x^2\,dx = \frac{1}{3}.
-\end{align}
-We can reference \cref{eq:sample} thanks to \texttt{cleveref}.
+\begin{itemize}
+  \item[$\square$] 50--249 employees (medium-sized enterprise)
+  \item[$\square$] 250--999 employees (large enterprise)
+  \item[$\square$] 1000 or more employees (very large enterprise)
+\end{itemize}
 
-\section{Figures and subfigures}
-A normal figure:
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=.7\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-  \caption{Example figure.}
-  \label{fig:example}
-\end{figure}
+\bigskip
+\noindent\textbf{A2.} What industry does your organization primarily operate in?
 
-Two images side-by-side via \texttt{subcaption}:
-\begin{figure}[h]
-  \centering
-  \begin{subfigure}{.47\linewidth}
-    \centering
-    \includegraphics[width=.9\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-    \caption{Left}
-    \label{fig:left}
-  \end{subfigure}\hfill
-  \begin{subfigure}{.47\linewidth}
-    \centering
-    \includegraphics[width=.9\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-    \caption{Right}
-    \label{fig:right}
-  \end{subfigure}
-  \caption{Two subfigures.}
-  \label{fig:two-subfigs}
-\end{figure}
+\begin{itemize}
+  \item[$\square$] Information Technology
+  \item[$\square$] Finance and Banking
+  \item[$\square$] Manufacturing
+  \item[$\square$] Retail and Commerce
+  \item[$\square$] Telecommunications
+  \item[$\square$] Public Sector
+  \item[$\square$] Other (please specify): \underline{\hspace{5cm}}
+\end{itemize}
 
-We can reference \cref{fig:example,fig:two-subfigs,fig:left}.
+\bigskip
+\noindent\textbf{A3.} How long has your PMO been formally established?
 
-\section{Tables}
-A compact table with \texttt{booktabs}:
-\begin{table}[h]
-  \caption{Compact example table}
-  \label{tab:compact}
-  \centering
-  \begin{tabular}{lrr}
-    \toprule
-    Factor & Mean & SD\\
-    \midrule
-    Pay           & 2.0 & 0.5\\
-    Recognition   & 4.0 & 0.7\\
-    Growth        & 5.0 & 0.6\\
-    \bottomrule
-  \end{tabular}
-\end{table}
+\begin{itemize}
+  \item[$\square$] Less than 1 year
+  \item[$\square$] 1--3 years
+  \item[$\square$] 3--5 years
+  \item[$\square$] More than 5 years
+\end{itemize}
 
-A long table across multiple pages (\texttt{longtable}):
-\begin{longtable}{llr}
-\caption{Long table example}\label{tab:long}\\
+\bigskip
+\noindent\textbf{A4.} How many active projects does your PMO currently oversee?
+
+\begin{itemize}
+  \item[$\square$] 1--10 projects
+  \item[$\square$] 11--25 projects
+  \item[$\square$] 26--50 projects
+  \item[$\square$] More than 50 projects
+\end{itemize}
+
+\bigskip
+
+% ── PART B ──────────────────────────────────────────────────────────────────
+\section*{Part B --- Integration Maturity Assessment}
+
+\noindent\textbf{B1.} Which of the following best describes how data flows
+between your PMO's information systems? \textit{(Select one option.)}
+
+\begin{itemize}
+  \item[$\square$] \textbf{Level 1 --- Initial:} Data is consolidated manually
+  from multiple tools into spreadsheets. There are no automated connections
+  between systems.
+  \item[$\square$] \textbf{Level 2 --- Developing:} Some systems share data via
+  scheduled file exports (e.g., CSV or Excel). Some manual work is still
+  required to consolidate and verify data.
+  \item[$\square$] \textbf{Level 3 --- Defined:} Systems are connected via APIs.
+  Reports are generated automatically and data flows are mostly automated and
+  near real-time.
+  \item[$\square$] \textbf{Level 4 --- Optimized:} All systems are fully
+  integrated within a unified platform with real-time dashboards and full
+  portfolio visibility. Governance processes are fully standardized.
+\end{itemize}
+
+\bigskip
+\noindent\textit{For items B2--B5, please indicate your level of agreement
+using the following scale:}
+
+\medskip
+\begin{center}
+\begin{tabular}{ccccc}
+  \textbf{1} & \textbf{2} & \textbf{3} & \textbf{4} & \textbf{5}\\
+  Strongly Disagree & Disagree & Neutral & Agree & Strongly Agree
+\end{tabular}
+\end{center}
+
+\bigskip
+
+{\singlespacing
+\begin{longtable}{@{} p{0.05\linewidth} p{0.65\linewidth} p{0.20\linewidth} @{}}
 \toprule
-\textbf{Item} & \textbf{Group} & \textbf{Value}\\
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
 \midrule
 \endfirsthead
 \toprule
-\textbf{Item} & \textbf{Group} & \textbf{Value}\\
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
 \midrule
 \endhead
 \bottomrule
 \endfoot
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
-A & Alpha & 1\\
-B & Alpha & 2\\
-C & Beta  & 3\\
+B2 & Our PMO systems share data automatically without manual intervention.
+   & \underline{\hspace{2cm}}\\[6pt]
+B3 & Our PMO uses API connections between project tracking, financial, and
+   reporting tools.
+   & \underline{\hspace{2cm}}\\[6pt]
+B4 & Our PMO relies on manual data entry or file exports (CSV/Excel) to
+   consolidate project data.
+   & \underline{\hspace{2cm}}\\[6pt]
+B5 & Our PMO operates within a unified platform ecosystem where all systems
+   are fully integrated.
+   & \underline{\hspace{2cm}}\\
 \end{longtable}
-
-A landscape figure page (\texttt{pdflscape}):
-\begin{landscape}
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=.9\linewidth]{b_chapters/chapter1/assets/RNU_large_logo.png}
-  \caption{Landscape example.}
-\end{figure}
-\end{landscape}
-
-\section{Algorithms and code listings}
-Pseudocode with \texttt{algorithm}+\texttt{algpseudocode}:
-\begin{algorithm}[h]
-\caption{Greedy selection (example)}
-\begin{algorithmic}[1]
-  \State Initialize $S \gets \emptyset$
-  \While{feasible choice exists}
-    \State choose best feasible item $x$
-    \State $S \gets S \cup \{x\}$
-  \EndWhile
-  \State \Return $S$
-\end{algorithmic}
-\label{alg:greedy-app}
-\end{algorithm}
-
-Code with \texttt{listings}:
-% \begin{lstlisting}[language=Python,caption={Bubble sort},label={lst:bubble-app}]
-% def bubble(a):
-%     n = len(a)
-%     for i in range(n-1):
-%         for j in range(n-1-i):
-%             if a[j] > a[j+1]:
-%                 a[j], a[j+1] = a[j+1], a[j]
-% \end{lstlisting}
-{\captionsetup{type=lstlisting}
-\begin{lstlisting}[language=Python,caption={Bubble sort},label={lst:bubble-app}]
-def bubble(a):
-    n = len(a)
-    for i in range(n-1):
-        for j in range(n-1-i):
-            if a[j] > a[j+1]:
-                a[j], a[j+1] = a[j+1], a[j]
-\end{lstlisting}
 }
 
+% ── PART C ──────────────────────────────────────────────────────────────────
+\section*{Part C --- Reporting Automation and Data Quality}
 
+\noindent\textit{Please indicate your level of agreement with each statement
+(1 = Strongly Disagree, 5 = Strongly Agree). Item C5 is reverse scored.}
 
-We can reference \cref{alg:greedy-app,lst:bubble-app}.
+\bigskip
 
-% \section{TikZ and (optional) pgfplots}
-% A tiny TikZ graphic:
-% \begin{figure}[h]
-%   \centering
-%   \begin{tikzpicture}
-%     \draw (0,0) rectangle (2,1);
-%     \foreach \x in {0.25,0.5,...,1.75} \draw (\x,0.5) circle (1pt);
-%   \end{tikzpicture}
-%   \caption{Simple TikZ demo.}
-% \end{figure}
+{\singlespacing
+\begin{longtable}{@{} p{0.05\linewidth} p{0.65\linewidth} p{0.20\linewidth} @{}}
+\toprule
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+C1 & Project status reports in our PMO are generated automatically from
+   integrated systems.
+   & \underline{\hspace{2cm}}\\[6pt]
+C2 & Our PMO dashboards are updated in real time without manual intervention.
+   & \underline{\hspace{2cm}}\\[6pt]
+C3 & The data in our PMO reports is accurate and reliable.
+   & \underline{\hspace{2cm}}\\[6pt]
+C4 & Project data is available in a timely manner for decision-making.
+   & \underline{\hspace{2cm}}\\[6pt]
+C5 & We frequently encounter errors or inconsistencies in our PMO reporting
+   data. \textit{(reverse scored)}
+   & \underline{\hspace{2cm}}\\
+\end{longtable}
+}
 
-\par\noindent
-\section{TikZ: Trie data structure diagram}
+% ── PART D ──────────────────────────────────────────────────────────────────
+\section*{Part D --- Governance Standardization}
 
-TikZ is a powerwfull diagraming, graphing engine allowing you to script creation of the
-diagrams. Refer to \url{https://tikz.dev/} for online documentation and examples.
+\noindent\textit{Please indicate your level of agreement with each statement
+(1 = Strongly Disagree, 5 = Strongly Agree).}
 
-\begin{figure}[h]
-  \centering
-  \tikz [>={To[sep]}, rotate=90, xscale=-1,
-         mark/.style={fill=black!50}, mark/.default=]
-    \graph [trie, simple,
-            nodes={circle,draw},
-            edges={nodes={
-                inner sep=1pt, anchor=mid,
-                fill=yellow!20}}, % yellowish background
-            put node text on incoming edges]
-      {
-        root[mark] -> {
-          a -> n -> {
-            g [mark],
-            f -> a -> n -> g [mark]
-          },
-          f -> a -> n -> g [mark],
-          g[mark],
-          n -> {
-            g[mark],
-            f -> a -> n -> g[mark]
-          }
-        },
-        { [edges=red] % highlight one path
-          root -> f -> a -> n
-        }
-      };
-  \caption{Trie data structure demonstrating graph-based TikZ syntax with highlighted path.}
-  \label{fig:tikz-trie-demo}
-\end{figure}
+\bigskip
 
+{\singlespacing
+\begin{longtable}{@{} p{0.05\linewidth} p{0.65\linewidth} p{0.20\linewidth} @{}}
+\toprule
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
+\midrule
+\endfirsthead
+\toprule
+\textbf{No.} & \textbf{Statement} & \textbf{Rating (1--5)}\\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+D1 & Our PMO follows standardized processes for project reporting across all
+   projects.
+   & \underline{\hspace{2cm}}\\[6pt]
+D2 & Our PMO uses centralized dashboards to monitor all projects in one place.
+   & \underline{\hspace{2cm}}\\[6pt]
+D3 & Project governance processes in our PMO are consistently applied across
+   all departments.
+   & \underline{\hspace{2cm}}\\[6pt]
+D4 & Our PMO has clearly defined and documented standards for data collection
+   and reporting.
+   & \underline{\hspace{2cm}}\\[6pt]
+D5 & The use of centralized BI tools has improved governance standardization
+   in our PMO.
+   & \underline{\hspace{2cm}}\\
+\end{longtable}
+}
 
-If \texttt{pgfplots} is installed (we auto-load it if present), a quick plot:
-\IfFileExists{pgfplots.sty}{%
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}
-    \begin{axis}[xlabel=$x$,ylabel={$\,\sin x$}]
-      \addplot {sin(deg(x))};
-    \end{axis}
-  \end{tikzpicture}
-  \caption{Sine plot with pgfplots.}
-\end{figure}
-}{\noindent\emph{(pgfplots not installed — skipping plot.)}}
-
-\section{Cross-references}
-Use \verb|\label{...}| and \verb|\cref{...}| for equations, figures, tables, algorithms, and listings to get correct names and numbers automatically.
-
-\section{Bibliography citation}
-Cite like \cite{porter2008} and list all sources in the “Literature” section (managed by \texttt{biblatex} with the IEEE style in this project).
+\bigskip
+\noindent\textit{Thank you for completing this survey. Your responses are
+anonymous and will be used solely for academic research purposes in partial
+fulfilment of the Bachelor's thesis requirements at Riga Nordic University.}
