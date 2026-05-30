@@ -94,72 +94,80 @@ The complete survey instrument is presented in
 Table~\ref{tab:survey-questions}. Each item is aligned with a specific
 research construct and hypothesis.
 
-{\singlespacing
-\begin{table}[h]
-  \caption{Survey instrument items by construct and hypothesis}
-  \label{tab:survey-questions}
-  \centering
-  \begin{tabular}{p{0.05\linewidth}p{0.40\linewidth}p{0.25\linewidth}p{0.15\linewidth}}
-    \toprule
-    \textbf{No.} & \textbf{Survey Item} & \textbf{Construct} &
-    \textbf{Hypothesis}\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part A --- Organizational Profile}}\\
-    A1 & How many employees does your organization have?
-    (50--249 / 250+) & Organization size & --\\
-    A2 & What industry does your organization operate in?
-    (categorical) & Industry sector & --\\
-    A3 & How long has your PMO been formally established?
-    (years) & PMO maturity & --\\
-    A4 & How many active projects does your PMO currently oversee?
-    (numerical) & PMO scope & --\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part B --- Integration Maturity Assessment}}\\
-    B1 & Which of the following best describes how data flows
-    between your PMO's information systems? (select one IMM level
-    description) & Integration maturity level & H1\\
-    B2 & Our PMO systems share data automatically without manual
-    intervention. & Integration automation & H1, H2\\
-    B3 & Our PMO uses API connections between project tracking,
-    financial, and reporting tools. & API integration & H2\\
-    B4 & Our PMO relies on manual data entry or file exports
-    (CSV/Excel) to consolidate project data. & Manual integration & H1, H2\\
-    B5 & Our PMO operates within a unified platform ecosystem
-    where all systems are fully integrated. & Platform integration & H1, H2\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part C --- Reporting Automation and Data Quality}}\\
-    C1 & Project status reports in our PMO are generated
-    automatically from integrated systems. & Reporting automation & H2\\
-    C2 & Our PMO dashboards are updated in real time without
-    manual intervention. & Reporting automation & H2\\
-    C3 & The data in our PMO reports is accurate and reliable. &
-    Data accuracy & H3\\
-    C4 & Project data is available in a timely manner for
-    decision-making. & Data timeliness & H3\\
-    C5 & We frequently encounter errors or inconsistencies in
-    our PMO reporting data. (reverse scored) & Data quality & H3\\
-    \midrule
-    \multicolumn{4}{l}{\textbf{Part D --- Governance Standardization}}\\
-    D1 & Our PMO follows standardized processes for project
-    reporting across all projects. & Governance standardization & H4\\
-    D2 & Our PMO uses centralized dashboards to monitor all
-    projects in one place. & BI centralization & H4\\
-    D3 & Project governance processes in our PMO are consistently
-    applied across all departments. & Governance consistency & H4\\
-    D4 & Our PMO has clearly defined and documented standards
-    for data collection and reporting. & Governance documentation & H4\\
-    D5 & The use of centralized BI tools has improved governance
-    standardization in our PMO. & BI-governance link & H4\\
-    \bottomrule
-  \end{tabular}
-\end{table}
-}
-
 \paragraph{Note on scaling.}
 All items in Parts B--D use a five-point Likert scale:
 1 = Strongly Disagree, 2 = Disagree, 3 = Neutral,
 4 = Agree, 5 = Strongly Agree. Item C5 is reverse scored,
 meaning higher values indicate lower data quality issues.
+
+{\singlespacing
+\begin{longtable}{p{0.05\linewidth}p{0.40\linewidth}p{0.25\linewidth}p{0.15\linewidth}}
+  \caption{Survey instrument items by construct and hypothesis}
+  \label{tab:survey-questions}\\
+  \toprule
+  \textbf{No.} & \textbf{Survey Item} & \textbf{Construct} &
+  \textbf{Hypothesis}\\
+  \midrule
+  \endfirsthead
+  \multicolumn{4}{l}{\small\textit{Table~\ref{tab:survey-questions} continued}}\\
+  \toprule
+  \textbf{No.} & \textbf{Survey Item} & \textbf{Construct} &
+  \textbf{Hypothesis}\\
+  \midrule
+  \endhead
+  \midrule
+  \multicolumn{4}{r}{\small\textit{Continued on next page}}\\
+  \endfoot
+  \bottomrule
+  \endlastfoot
+  \multicolumn{4}{l}{\textbf{Part A --- Organizational Profile}}\\
+  A1 & How many employees does your organization have?
+  (50--249 / 250+) & Organization size & --\\
+  A2 & What industry does your organization operate in?
+  (categorical) & Industry sector & --\\
+  A3 & How long has your PMO been formally established?
+  (years) & PMO maturity & --\\
+  A4 & How many active projects does your PMO currently oversee?
+  (numerical) & PMO scope & --\\
+  \midrule
+  \multicolumn{4}{l}{\textbf{Part B --- Integration Maturity Assessment}}\\
+  B1 & Which of the following best describes how data flows
+  between your PMO's information systems? (select one IMM level
+  description) & Integration maturity level & H1\\
+  B2 & Our PMO systems share data automatically without manual
+  intervention. & Integration automation & H1, H2\\
+  B3 & Our PMO uses API connections between project tracking,
+  financial, and reporting tools. & API integration & H2\\
+  B4 & Our PMO relies on manual data entry or file exports
+  (CSV/Excel) to consolidate project data. & Manual integration & H1, H2\\
+  B5 & Our PMO operates within a unified platform ecosystem
+  where all systems are fully integrated. & Platform integration & H1, H2\\
+  \midrule
+  \multicolumn{4}{l}{\textbf{Part C --- Reporting Automation and Data Quality}}\\
+  C1 & Project status reports in our PMO are generated
+  automatically from integrated systems. & Reporting automation & H2\\
+  C2 & Our PMO dashboards are updated in real time without
+  manual intervention. & Reporting automation & H2\\
+  C3 & The data in our PMO reports is accurate and reliable. &
+  Data accuracy & H3\\
+  C4 & Project data is available in a timely manner for
+  decision-making. & Data timeliness & H3\\
+  C5 & We frequently encounter errors or inconsistencies in
+  our PMO reporting data. (reverse scored) & Data quality & H3\\
+  \midrule
+  \multicolumn{4}{l}{\textbf{Part D --- Governance Standardization}}\\
+  D1 & Our PMO follows standardized processes for project
+  reporting across all projects. & Governance standardization & H4\\
+  D2 & Our PMO uses centralized dashboards to monitor all
+  projects in one place. & BI centralization & H4\\
+  D3 & Project governance processes in our PMO are consistently
+  applied across all departments. & Governance consistency & H4\\
+  D4 & Our PMO has clearly defined and documented standards
+  for data collection and reporting. & Governance documentation & H4\\
+  D5 & The use of centralized BI tools has improved governance
+  standardization in our PMO. & BI-governance link & H4\\
+\end{longtable}
+}
 
 \section{Expert Interview Design}
 \label{sec:interviews-design}
