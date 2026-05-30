@@ -83,20 +83,13 @@
 % ===== Table of Contents (and optional lists) =====
 \tableofcontents
 
-% ---- Meta lists: each on its own page, and not added to ToC ----
-\clearpage
-\begingroup\let\addcontentsline\relax\listoffigures\endgroup
-
+% ---- Meta lists: only List of Tables (has content) ----
 \clearpage
 \begingroup\let\addcontentsline\relax\listoftables\endgroup
-
 \clearpage
-\begingroup\let\addcontentsline\relax\listofalgorithms\endgroup
-
-\clearpage
-% \begingroup\let\addcontentsline\relax\listoflistings\endgroup
-\begingroup\let\addcontentsline\relax\lstlistoflistings\endgroup
-\clearpage
+% \begingroup\let\addcontentsline\relax\listoffigures\endgroup
+% \begingroup\let\addcontentsline\relax\listofalgorithms\endgroup
+% \begingroup\let\addcontentsline\relax\lstlistoflistings\endgroup
 
 
 
